@@ -30,16 +30,21 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 1. Fork the repository on GitHub
 2. Clone your fork locally:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/arc-kit.git
    cd arc-kit
    ```
+
 3. Create a virtual environment:
+
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
+
 4. Install the package in development mode:
+
    ```bash
    pip install -e .
    ```
@@ -59,9 +64,11 @@ Arc Kit implements Adaptive Reasoning Chains (ARC) methodology. Before contribut
 ### Creating a New Feature
 
 1. Create a new branch for your feature:
+
    ```bash
    git checkout -b feature/adaptive-reasoning-enhancement
    ```
+
 2. Develop your feature following the adaptive reasoning principles
 3. Write tests for your changes
 4. Update documentation as needed
@@ -139,11 +146,13 @@ When contributing, ensure your changes align with Arc Kit's core principles:
 ### Running Tests
 
 Run the full test suite:
+
 ```bash
 python -m pytest
 ```
 
 Run tests for a specific module:
+
 ```bash
 python -m pytest tests/test_module.py
 ```

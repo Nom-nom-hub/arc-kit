@@ -16,7 +16,7 @@ We take security seriously. If you discover a security vulnerability in Arc Kit,
 ### Disclosure Process
 
 1. **Do not report security vulnerabilities through public GitHub issues**
-2. Contact us privately via our security email: security@arc-kit.org (or use the private reporting feature if available)
+2. Contact us privately via our security email: <soon...> (or use the private reporting feature if available)
 3. Include the following information in your report:
    - A clear description of the vulnerability
    - Steps to reproduce the issue
@@ -119,11 +119,13 @@ Arc Kit implements several security measures by design:
 ## Contact Information
 
 For security issues:
-- Email: security@arc-kit.org
+
+- Email: <security@arc-kit.org>
 - PGP Key: (if applicable)
 - Security advisory database: (if applicable)
 
 For general security questions or best practices:
+
 - Create a GitHub issue (for non-sensitive topics)
 - Join our community discussion forums
 

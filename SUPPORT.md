@@ -24,16 +24,19 @@ Start with our comprehensive documentation:
 ### Common Issues
 
 #### Command Execution Problems
+
 - Verify that your AI agent is properly configured and authenticated
 - Check that the required tools (git, Python) are available in your PATH
 - Ensure the Arc Kit project is properly initialized
 
 #### Template Issues
+
 - Verify that template files are present in the `templates/` directory
 - Check that you're in the correct project directory when running commands
 - Ensure file permissions allow reading template files
 
 #### Adaptive Reasoning Problems
+
 - Review context detection settings in your configuration
 - Verify that reasoning chain traceability is properly configured
 - Check for invalid adaptation triggers or constraints
@@ -151,7 +154,7 @@ For complex architectural questions or enterprise usage:
 - [Documentation](/)
 - [Releases and Changelog](CHANGELOG.md)
 
-### Community Resources
+### Additional Community Resources
 
 - Blog posts and articles about adaptive reasoning
 - Video tutorials and demonstrations
