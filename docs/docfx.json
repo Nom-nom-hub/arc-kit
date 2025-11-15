@@ -1,0 +1,32 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["src/**/*.py"],
+          "exclude": ["**/bin/**", "**/obj/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["*.md"],
+        "exclude": ["obj/**", "_site/**"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "output": "_site",
+    "template": ["default"],
+    "globalMetadata": {
+      "_appTitle": "Arc Kit Documentation",
+      "_appFooter": "Arc Kit - Adaptive Reasoning Chains Toolkit"
+    }
+  }
+}
