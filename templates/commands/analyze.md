@@ -28,12 +28,15 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for SPEC_FILE, ANALYSIS_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read SPEC_FILE and `/memory/constitution.md`. Load ANALYSIS_FILE template (already copied).
+2. **Load context**: Read SPEC_FILE and `.arckit/memory/constitution.md`. Load ANALYSIS_FILE template (already copied).
 
 3. **Execute adaptive analysis workflow**: Follow the structure in ANALYSIS_FILE template to:
    - Fill Context Analysis (environmental factors affecting specification)
    - Fill Adaptation Readiness Assessment (how well spec can evolve)
    - Identify Evolution Pathways (potential directions for change)
+   - **CRITICAL**: Generate comprehensive validation points for functionality verification
+   - **CRITICAL**: Identify testability requirements for all features
+   - **CRITICAL**: Assess quality attributes including test coverage requirements
    - Generate Adaptive Validation Points (where to validate during evolution)
 
 4. **Adaptive Risk Assessment**:
@@ -108,3 +111,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Identify context dependencies and switching mechanisms
 - Assess feedback loop effectiveness
 - ERROR on critical adaptation risks or context sensitivity issues
+
+## Next Step Recommendation
+
+Now that your adaptive analysis is complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.design` to create an adaptive architecture based on your analysis
+- **Alternative**: Run `/arckit.plan` if you want to proceed directly to planning
+
+The `/arckit.design` command will translate your analysis findings into an adaptive architecture that supports the evolution pathways identified during analysis.
+
+**Pro tip**: Review the identified risks and adaptation readiness assessment from this analysis phase when creating your design to ensure all concerns are addressed.

@@ -24,13 +24,16 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for TASKS_FILE, IMPLEMENTATION_DIR, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read TASKS_FILE, PLAN_FILE, DESIGN_FILE, SPEC_FILE, and `/memory/constitution.md`.
+2. **Load context**: Read TASKS_FILE, PLAN_FILE, DESIGN_FILE, SPEC_FILE, and `.arckit/memory/constitution.md`.
 
 3. **Execute adaptive implementation workflow**:
    - Initialize Adaptive Implementation Environment
    - Execute Context-Sensitive Implementation Tasks
    - Apply Evolution Management Techniques
    - Integrate Reasoning Chain Logic
+   - **CRITICAL**: Implement comprehensive testing strategy (unit, integration, system tests)
+   - **CRITICAL**: Verify all functionality works as specified before completion
+   - **CRITICAL**: Validate dependencies and third-party integrations
    - Perform Quality Assurance for Adaptive Systems
    - Establish Monitoring & Feedback Systems
 
@@ -38,6 +41,12 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Adaptation requirements from upstream artifacts
    - Context switching capabilities
    - Evolution pathway implementations
+   - **CRITICAL**: Functional correctness - all implemented features must work as specified
+   - **CRITICAL**: Code quality standards - all code must be clean, documented, and maintainable
+   - **CRITICAL**: Test coverage - all critical paths must have automated tests with >=80% coverage
+   - **CRITICAL**: Dependency validation - all dependencies must be verified and working
+   - **CRITICAL**: Performance requirements - must meet specified performance criteria
+   - **CRITICAL**: Error handling - must gracefully handle edge cases and error conditions
 
 5. **Generate Adaptive Implementation Artifacts**: Create implementation artifacts with:
    - Adaptive configuration files
@@ -145,3 +154,18 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Include context detection and switching mechanisms
 - Build in learning and improvement systems
 - ERROR on implementations that don't accommodate evolution
+- All code must be functionally correct, tested, and verifiable before completion
+- Implementation must include automated tests that verify functionality
+- All dependencies and requirements must be validated as working
+- Implementation must be verifiable through automated or manual testing procedures
+
+## Next Step Recommendation
+
+Now that your adaptive implementation is complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.checklist` to create an adaptive quality assurance checklist for your implementation
+- **Alternative**: Return to `/arckit.define` for the next feature, incorporating lessons learned
+
+The `/arckit.checklist` command will create quality assurance measures to validate your implementation against the original requirements and adaptation goals.
+
+**Pro tip**: Use the monitoring and feedback systems you built into your implementation to inform future development cycles and improvement efforts.

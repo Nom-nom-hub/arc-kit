@@ -2,8 +2,8 @@
 # This file is dot-sourced by other scripts to provide shared functionality
 
 # Default values
-$DEFAULT_SPECS_DIR = "specs"
-$DEFAULT_MEMORY_DIR = "memory"
+$DEFAULT_SPECS_DIR = ".arckit/specs"
+$DEFAULT_MEMORY_DIR = ".arckit/memory"
 $DEFAULT_SPECIFY_DIR = ".arckit"
 
 # Function to get the next feature number based on existing branches and spec directories
@@ -173,16 +173,19 @@ function Set-GitBranch {
 
 # Function to create or update the constitution file
 function Confirm-ConstitutionExists {
+    # Ensure the arckit structure exists first
+    Confirm-ArcKitStructure
+
     $constitutionPath = "${DEFAULT_MEMORY_DIR}/constitution.md"
-    
+
     if (!(Test-Path $constitutionPath)) {
         $constitutionDir = Split-Path $constitutionPath -Parent
         New-Item -ItemType Directory -Path $constitutionDir -Force | Out-Null
-        
+
         $constitutionContent = @'
 # Project Constitution
 
-**Version**: 1.0  
+**Version**: 1.0
 **Created**: [DATE]
 
 ## Purpose
@@ -228,7 +231,7 @@ This constitution establishes the governance principles for the project developm
 This constitution may be updated as the team learns and evolves. Changes should be made thoughtfully with team input and clear justification.
 
 '@
-        
+
         Set-Content -Path $constitutionPath -Value $constitutionContent -Encoding UTF8
     }
 }
@@ -238,10 +241,4 @@ function Confirm-ArcKitStructure {
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/scripts" -Force | Out-Null
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/templates" -Force | Out-Null
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/memory" -Force | Out-Null
-    
-    # Create placeholder file if it doesn't exist
-    $constitutionPath = "${DEFAULT_SPECIFY_DIR}/memory/constitution.md"
-    if (!(Test-Path $constitutionPath)) {
-        New-Item -Path $constitutionPath -Force | Out-Null
-    }
 }

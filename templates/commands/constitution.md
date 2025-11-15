@@ -25,7 +25,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for CONSTITUTION_FILE, GOVERNANCE_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read existing `/memory/constitution.md` if available, otherwise start fresh. Load CONSTITUTION_FILE template.
+2. **Load context**: Read existing `.arckit/memory/constitution.md` if available, otherwise start fresh. Load CONSTITUTION_FILE template.
 
 3. **Execute adaptive constitution workflow**:
    - Define Core Adaptive Principles
@@ -165,3 +165,18 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Include context-aware governance mechanisms
 - Build in learning and institutional memory systems
 - ERROR on principles that impede adaptation or learning
+- **CRITICAL**: All implementations must meet quality and verification standards
+- **CRITICAL**: Testing and validation are required for all deliverables
+- **CRITICAL**: Code correctness and functionality verification are mandatory
+- **CRITICAL**: Dependencies must be validated before project completion
+
+## Next Step Recommendation
+
+Now that your project constitution is established, the most logical next step is:
+
+- **Primary**: Run `/arckit.define` to create your first feature specification guided by the governance principles you've established
+- **Alternative**: Use the constitution as reference in future commands to maintain consistency
+
+The `/arckit.define` command will create feature specifications that align with the adaptive principles and governance framework you've defined.
+
+**Pro tip**: All future development should refer back to these constitution principles to ensure consistency and alignment with your governance standards.

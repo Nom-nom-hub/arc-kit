@@ -9,8 +9,8 @@
 set -euo pipefail
 
 # Default values
-DEFAULT_SPECS_DIR="specs"
-DEFAULT_MEMORY_DIR="memory"
+DEFAULT_SPECS_DIR=".arckit/specs"
+DEFAULT_MEMORY_DIR=".arckit/memory"
 DEFAULT_SPECIFY_DIR=".arckit"
 
 # Common utility functions
@@ -125,14 +125,17 @@ checkout_branch() {
 
 # Function to create or update the constitution file
 ensure_constitution_exists() {
+    # Ensure the arckit structure exists first
+    ensure_arckit_structure
+
     local constitution_path="${DEFAULT_MEMORY_DIR}/constitution.md"
-    
+
     if [[ ! -f "$constitution_path" ]]; then
         mkdir -p "$(dirname "$constitution_path")"
         cat > "$constitution_path" << 'EOF'
 # Project Constitution
 
-**Version**: 1.0  
+**Version**: 1.0
 **Created**: [DATE]
 
 ## Purpose
@@ -186,7 +189,4 @@ ensure_arckit_structure() {
     mkdir -p "${DEFAULT_SPECIFY_DIR}/scripts"
     mkdir -p "${DEFAULT_SPECIFY_DIR}/templates"
     mkdir -p "${DEFAULT_SPECIFY_DIR}/memory"
-    
-    # Create placeholder files if they don't exist
-    touch "${DEFAULT_SPECIFY_DIR}/memory/constitution.md" 2>/dev/null || true
 }

@@ -72,35 +72,59 @@ This document contains the rules and guidelines for using Arc Kit with adaptive 
 
 ## Command Usage
 
+### /arckit.constitution
+- Establish project governance principles for adaptive development
+- Define core adaptive principles and reasoning chain protocols
+- Create institutional learning and improvement systems
+- **Next**: `/arckit.define` for your first feature specification
+
 ### /arckit.define
 - Create adaptive specifications that can evolve with changing requirements
 - Identify core vs. flexible requirements
 - Build in feedback loops for continuous improvement
+- **Next**: `/arckit.analyze` to evaluate specification readiness or `/arckit.plan` for direct planning
 
 ### /arckit.analyze
 - Analyze specifications for consistency and adaptation readiness
 - Identify risks and improvement opportunities
 - Evaluate adaptability of proposed solutions
+- **Next**: `/arckit.design` to create adaptive architecture or `/arckit.plan` for direct planning
 
 ### /arckit.design
 - Design architectures that support requirement evolution
 - Create flexible components with clear interfaces
 - Plan for gradual, safe evolution
+- **Next**: `/arckit.plan` to create implementation plan or `/arckit.chain` for direct task generation
 
 ### /arckit.plan
 - Create implementation plans with adaptation considerations
 - Include strategies for how the plan might need to evolve
 - Plan for feedback collection during implementation
+- **Next**: `/arckit.chain` to generate task chains or `/arckit.checklist` for quality assurance
 
 ### /arckit.chain
 - Generate adaptive task chains with reasoning links
 - Include checkpoints for plan adjustments
 - Plan for parallel execution where possible
+- **Next**: `/arckit.implement` for execution or `/arckit.checklist` for quality assurance
 
 ### /arckit.implement
 - Implement with adaptation in mind
 - Monitor for feedback that might require approach changes
 - Document lessons learned for future adaptations
+- **Next**: `/arckit.checklist` for quality verification or `/arckit.define` for next feature
+
+### /arckit.checklist
+- Create adaptive quality checklists for all development phases
+- Verify implementation against adaptive requirements
+- Establish evolution-ready validation criteria
+- **Next**: Return to `/arckit.define` for next feature or use as reference for current implementation
+
+### /arckit.clarify
+- Resolve ambiguities in specifications with adaptive considerations
+- Ask targeted questions to improve specification clarity
+- Integrate answers directly into specifications
+- **Next**: `/arckit.plan` after clarifications or `/arckit.analyze` for re-analysis
 
 ## Adaptive Reasoning Guidelines
 

@@ -28,7 +28,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for PLAN_FILE, TASKS_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read PLAN_FILE, DESIGN_FILE, SPEC_FILE, and `/memory/constitution.md`. Load TASKS_FILE template (already copied).
+2. **Load context**: Read PLAN_FILE, DESIGN_FILE, SPEC_FILE, and `.arckit/memory/constitution.md`. Load TASKS_FILE template (already copied).
 
 3. **Execute adaptive task chain workflow**: Follow the structure in TASKS_FILE template to:
    - Build Reasoning Chain Structure (connections between decisions and actions)
@@ -36,6 +36,10 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Create Context Propagation (how context flows through the chain)
    - Establish Feedback Integration (results feeding back into chain)
    - Design Evolution Tracking (how chains adapt based on outcomes)
+   - **CRITICAL**: Include comprehensive testing tasks (unit, integration, system tests)
+   - **CRITICAL**: Add functionality verification tasks for all features
+   - **CRITICAL**: Include dependency validation and integration testing tasks
+   - **CRITICAL**: Add error handling and edge case testing tasks
    - Implement Quality Assurance for Chains (validation during execution)
 
 4. **Adaptive Chain Validation**: Validate task chains against:
@@ -168,3 +172,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Include feedback mechanisms for chain learning
 - Design chains that can evolve during execution
 - ERROR on chains that don't incorporate adaptation
+
+## Next Step Recommendation
+
+Now that your adaptive task chains are complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.implement` to execute the implementation based on your task chains
+- **Alternative**: Run `/arckit.checklist` to create a quality assurance checklist before implementation
+
+The `/arckit.implement` command will execute your adaptive task chains with context-aware deployment strategies.
+
+**Pro tip**: Your reasoning chains will guide the implementation process, ensuring each step aligns with the adaptive goals you've established.

@@ -38,7 +38,7 @@ Execution steps:
    - Core user goals & success criteria that can evolve
    - Explicit out-of-scope declarations with evolution boundaries
    - User roles / personas differentiation across contexts
-   
+
    Dynamic Domain & Data Model:
    - Entities that can evolve, their attributes, relationships
    - Identity & uniqueness rules across contexts
@@ -82,6 +82,9 @@ Execution steps:
    - Acceptance criteria testability across contexts
    - Measurable Definition of Done style indicators that can evolve
    - Adaptation success criteria
+   - **CRITICAL**: Verification and testing requirements for all features
+   - **CRITICAL**: How to validate functionality before project completion
+   - **CRITICAL**: Test coverage and validation criteria for each component
 
    Adaptive Misc / Placeholders:
    - TODO markers / unresolved decisions about adaptation
@@ -176,6 +179,17 @@ Execution steps:
    - Coverage summary table listing each taxonomy category with Status: Resolved (was Partial/Missing and addressed), Deferred (exceeds question quota or better suited for planning), Clear (already sufficient), Outstanding (still Partial/Missing but low impact).
    - If any Outstanding or Deferred remain, recommend whether to proceed to `/arckit.plan` or run `/arckit.analyze` again later post-plan.
    - Suggested next command with adaptive focus.
+
+## Next Step Recommendation
+
+Now that your adaptive clarifications are complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.plan` to create an implementation plan based on your clarified and improved specification
+- **Alternative**: Run `/arckit.analyze` to analyze the updated specification again if significant changes were made
+
+The `/arckit.plan` command will create an implementation plan that incorporates the clarifications you've added to your specification.
+
+**Pro tip**: The clarifications you've made will help ensure your implementation plan addresses potential ambiguities and adaptation considerations upfront.
 
 Behavior rules:
 

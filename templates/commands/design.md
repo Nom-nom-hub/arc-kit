@@ -28,13 +28,16 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for SPEC_FILE, DESIGN_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read SPEC_FILE, ANALYSIS_FILE, and `/memory/constitution.md`. Load DESIGN_FILE template (already copied).
+2. **Load context**: Read SPEC_FILE, ANALYSIS_FILE, and `.arckit/memory/constitution.md`. Load DESIGN_FILE template (already copied).
 
 3. **Execute adaptive design workflow**: Follow the structure in DESIGN_FILE template to:
    - Fill System Architecture with evolution capabilities
    - Fill Context-Aware Design Elements
    - Generate Evolution-Ready Patterns
    - Define Adaptive Infrastructure
+   - **CRITICAL**: Design for testability (ensure all components can be tested)
+   - **CRITICAL**: Create testable interfaces and modules
+   - **CRITICAL**: Design verification and validation architecture
    - Create Reasoning Chain Integration
    - Assess Quality Attributes for adaptive systems
 
@@ -137,3 +140,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Ensure context awareness at all levels
 - Build in learning and improvement mechanisms
 - ERROR on architecture decisions that impede adaptation
+
+## Next Step Recommendation
+
+Now that your adaptive design is complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.plan` to create an implementation plan based on your adaptive architecture
+- **Alternative**: Run `/arckit.chain` to generate adaptive task chains directly from the design
+
+The `/arckit.plan` command will create a detailed implementation plan that incorporates your adaptive architecture and evolution pathways.
+
+**Pro tip**: The adaptive architecture you've designed will guide the planning process, ensuring implementation strategies align with your architectural decisions.

@@ -28,13 +28,17 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for DESIGN_FILE, PLAN_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read DESIGN_FILE, SPEC_FILE, and `/memory/constitution.md`. Load PLAN_FILE template (already copied).
+2. **Load context**: Read DESIGN_FILE, SPEC_FILE, and `.arckit/memory/constitution.md`. Load PLAN_FILE template (already copied).
 
 3. **Execute adaptive planning workflow**: Follow the structure in PLAN_FILE template to:
    - Define Evolution Strategy (how implementation adapts to change)
    - Create Adaptive Task Breakdown (dynamic tasks that evolve)
    - Design Context-Sensitive Execution (behavior changes with environment)
    - Plan Risk Mitigation with Adaptation (evolving risk management)
+   - **CRITICAL**: Establish comprehensive testing strategy (unit, integration, system tests)
+   - **CRITICAL**: Plan functionality verification procedures for all features
+   - **CRITICAL**: Design dependency validation and integration testing approach
+   - **CRITICAL**: Plan error handling and edge case verification procedures
    - Establish Quality Assurance for Adaptive Systems (validation during change)
    - Design Learning & Improvement mechanisms
 
@@ -149,3 +153,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Include context-aware execution strategies
 - Build in learning and feedback mechanisms
 - ERROR on plans that don't accommodate evolution
+
+## Next Step Recommendation
+
+Now that your adaptive plan is complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.chain` to generate adaptive task chains based on your implementation plan
+- **Alternative**: Run `/arckit.checklist` to create an adaptive quality checklist for your plan
+
+The `/arckit.chain` command will break down your plan into actionable, adaptive task chains that can evolve as implementation progresses.
+
+**Pro tip**: Use the evolution strategies and learning mechanisms you defined in your plan as guidance during task chain execution.

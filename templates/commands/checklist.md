@@ -24,13 +24,17 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for CHECKLIST_FILE, QUALITY_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read upstream artifacts (SPEC_FILE, DESIGN_FILE, PLAN_FILE, IMPLEMENTATION_ARTIFACTS), and `/memory/constitution.md`. Load CHECKLIST_FILE template.
+2. **Load context**: Read upstream artifacts (SPEC_FILE, DESIGN_FILE, PLAN_FILE, IMPLEMENTATION_ARTIFACTS), and `.arckit/memory/constitution.md`. Load CHECKLIST_FILE template.
 
 3. **Execute adaptive checklist workflow**:
    - Generate Context-Aware Quality Criteria
    - Create Evolution-Ready Validation Items
    - Build Adaptive Compliance Checks
    - Design Feedback-Driven Quality Assessment
+   - **CRITICAL**: Generate comprehensive testing checklists (unit, integration, system)
+   - **CRITICAL**: Create functionality verification items for all features
+   - **CRITICAL**: Include dependency and integration validation items
+   - **CRITICAL**: Add error handling and edge case verification items
    - Implement Learning-Based Quality Improvement
    - Establish Dynamic Quality Thresholds
 
@@ -164,3 +168,18 @@ You **MUST** consider the user input before proceeding (if not empty).
 - Include evolution validation for all quality measures
 - Build in learning and improvement mechanisms
 - ERROR on checklists that don't accommodate adaptation
+- **CRITICAL**: Checklists must include comprehensive testing verification items
+- **CRITICAL**: Checklists must validate all functionality works as specified
+- **CRITICAL**: Checklists must include dependency and integration verification
+- **CRITICAL**: Checklists must verify error handling and edge cases
+
+## Next Step Recommendation
+
+Now that your adaptive checklist is complete, the most logical next step is:
+
+- **Primary**: Use the checklist to verify your implementation (either go back to `/arckit.implement` or execute verification tasks manually)
+- **Alternative**: Return to `/arckit.define` for the next feature, using this checklist as a quality reference
+
+The adaptive checklist you've created should guide quality assurance for your current implementation and serve as a reference for future development.
+
+**Pro tip**: The quality criteria you've defined will help ensure your adaptive systems maintain quality across different contexts and evolution paths.

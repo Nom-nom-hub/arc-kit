@@ -90,14 +90,18 @@ Given that feature description, do this:
     4. Fill User Scenarios & Testing section with adaptive considerations
        If no clear user flow: ERROR "Cannot determine user scenarios"
     5. Generate Adaptive Functional Requirements
-       Each requirement must be testable and capable of evolution
+       Each requirement must be testable, verifiable, and capable of evolution
        Use reasonable defaults for unspecified details (document assumptions in Assumptions section)
     6. Define Adaptive Success Criteria
        Create measurable, technology-agnostic outcomes that can evolve
        Include both quantitative metrics (time, performance, volume) and qualitative measures (user satisfaction, task completion)
        Each criterion must be verifiable without implementation details
-    7. Identify Adaptive Key Entities (if data involved) that can evolve
-    8. Return: SUCCESS (adaptive spec ready for adaptive planning)
+    7. **CRITICAL**: Define Verification Requirements for each feature (how to test/verify functionality)
+       - Include specific test scenarios for each requirement
+       - Define expected inputs, outputs, and behaviors
+       - Specify edge cases and error conditions to validate
+    8. Identify Adaptive Key Entities (if data involved) that can evolve
+    9. Return: SUCCESS (adaptive spec ready for adaptive planning)
 
 5. Write the specification to SPEC_FILE using the adaptive template structure, replacing placeholders with concrete details derived from the feature description (arguments) while preserving section order and headings.
 
@@ -199,9 +203,18 @@ Given that feature description, do this:
 
    d. **Update Adaptive Checklist**: After each validation iteration, update the checklist file with current pass/fail status and adaptation readiness assessment
 
-7. Report completion with branch name, spec file path, checklist results, and readiness for the next phase (`/arckit.analyze` or `/arckit.plan`).
+7. Report completion with branch name, spec file path, checklist results, and readiness for the next phase.
 
-**NOTE:** The script creates and checks out the new branch and initializes the adaptive spec file before writing.
+## Next Step Recommendation
+
+Now that your adaptive specification is complete, the most logical next step is:
+
+- **Primary**: Run `/arckit.analyze` to analyze your specification for consistency and adaptation readiness
+- **Alternative**: Run `/arckit.plan` if you want to proceed directly to planning without analysis
+
+The `/arckit.analyze` command will evaluate your specification against adaptive quality criteria, identify potential risks, and ensure your requirements are ready for the design phase.
+
+**Pro tip**: If your specification has [NEEDS CLARIFICATION] markers, consider addressing them before proceeding, or use `/arckit.clarify` to systematically resolve ambiguities.
 
 ## General Guidelines
 
