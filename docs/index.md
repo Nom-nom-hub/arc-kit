@@ -7,8 +7,8 @@ Welcome to Arc Kit - the Adaptive Reasoning Chains Toolkit for next-generation s
 Get started with Arc Kit:
 
 - [Quick Start Guide](quickstart.md) - Learn the 6-step ARC process
-- [ARC Methodology](../ARC-METHODOLOGY.md) - Understand the breakthrough methodology
-- [Installation](../README.md#-installation) - Install Arc Kit in your project
+- Learn about the Adaptive Reasoning Chains (ARC) methodology
+- Install Arc Kit in your project
 
 ## Core Concepts
 
@@ -25,9 +25,9 @@ Get started with Arc Kit:
 ## Documentation
 
 - [Quick Start Guide](quickstart.md) - Get up and running quickly
-- [ARC Methodology Guide](../ARC-METHODOLOGY.md) - Deep dive into the methodology
-- [Command Reference](../templates/commands/) - Detailed command templates
+- Quick start with the 6-step ARC process
+- Complete methodology and command reference available in the project repository
 
 ## Learn More
 
-Visit the [main README](../README.md) for comprehensive information about Arc Kit and its capabilities.
+For comprehensive information about Arc Kit and its capabilities, visit the project repository on GitHub.
