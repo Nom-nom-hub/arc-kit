@@ -1,32 +1,18 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": ["src/**/*.py"],
-          "exclude": ["**/bin/**", "**/obj/**"]
-        }
-      ],
-      "dest": "api"
-    }
-  ],
   "build": {
     "content": [
       {
-        "files": ["*.md"],
-        "exclude": ["obj/**", "_site/**"]
-      }
-    ],
-    "resource": [
-      {
-        "files": ["images/**"]
+        "files": ["**/*.md"],
+        "exclude": ["obj/**", "_site/**", "**/bin/**", "**/obj/**"]
       }
     ],
     "output": "_site",
     "template": ["default"],
     "globalMetadata": {
       "_appTitle": "Arc Kit Documentation",
-      "_appFooter": "Arc Kit - Adaptive Reasoning Chains Toolkit"
+      "_appFooter": "Arc Kit - Adaptive Reasoning Chains Toolkit",
+      "_enableSearch": true,
+      "_disableContribution": true
     }
   }
 }
