@@ -1,0 +1,22 @@
+[project]
+name = "arc_cli"
+version = "1.0.0"
+description = "Arc Kit CLI - Adaptive Reasoning Chains Toolkit with breakthrough methodology"
+authors = [{name = "Arc Kit Development Team", email = "arc-kit@adaptive-ai.org"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "platformdirs>=4.0.0",
+    "readchar>=4.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+arckit = "arc_cli.__init__:main"
+
+[project.urls]
+Homepage = "https://github.com/arc-kit/arc-kit"
+Repository = "https://github.com/arc-kit/arc-kit"
+Documentation = "https://arc-kit.github.io/docs"

@@ -1,0 +1,105 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.vscode-pylance",
+    "github.vscode-github-actions",
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-vscode.vscode-json"
+  ],
+  "unwantedRecommendations": [],
+  "extensions": {
+    "onRecommendation": "ignore",
+    "ignoreRecommendations": false
+  },
+  "files": {
+    "associations": {
+      "*.mdx": "markdown",
+      "*.mli": "ocaml",
+      "*.mermaid": "markdown"
+    },
+    "encoding": "utf-8",
+    "eol": "\n"
+  },
+  "search": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/.git": true
+    }
+  },
+  "markdown": {
+    "preferredMdPathExtensionStyle": "relative",
+    "breakDurationBefore": 200,
+    "breakDurationAfter": 200,
+    "breakOnSingleNewLine": false
+  },
+  "notebook": {
+    "lineNumbers": "on"
+  },
+  "editor": {
+    "defaultFormatter": "esbenp.prettier-vscode",
+    "formatOnSave": true,
+    "codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "rulers": [80, 120],
+    "wordWrap": "on",
+    "fontSize": 14,
+    "tabSize": 2,
+    "insertSpaces": true,
+    "detectIndentation": false
+  },
+  "python": {
+    "defaultInterpreterPath": "./.venv/bin/python",
+    "terminal": {
+      "activateEnvironment": true
+    }
+  },
+  "terminal": {
+    "integrated": {
+      "defaultProfile": {
+        "windows": "PowerShell",
+        "linux": "bash",
+        "osx": "zsh"
+      },
+      "profiles": {
+        "bash": {
+          "path": "bash"
+        },
+        "PowerShell": {
+          "path": "pwsh",
+          "args": ["-ExecutionPolicy", "Bypass"]
+        }
+      }
+    }
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on",
+    "editor.rulers": [],
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.organizeImports": false
+    }
+  },
+  "adaptive.reasoning": {
+    "enable": true,
+    "contextAware": true,
+    "evolutionTracking": true,
+    "reasoningChains": true
+  },
+  "adaptive.templates": {
+    "specification": "adaptive-spec-template.md",
+    "plan": "adaptive-plan-template.md",
+    "tasks": "adaptive-tasks-template.md",
+    "checklist": "adaptive-checklist-template.md",
+    "architecture": "architecture-template.md",
+    "agent": "adaptive-agent-file-template.md"
+  }
+}
