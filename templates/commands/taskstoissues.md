@@ -1,5 +1,5 @@
 ---
-description: Convert existing adaptive tasks into actionable, dependency-ordered GitHub issues for the feature based on available adaptive design artifacts with reasoning chain traceability.
+description: Convert existing adaptive tasks into actionable, dependency-ordered GitHub issues with evolution tracking for the feature based on available adaptive design artifacts with reasoning chain traceability and adaptation metadata.
 tools: ['github/github-mcp-server/issue_write']
 scripts:
   sh: scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks

@@ -1200,22 +1200,22 @@ def init(
     steps_lines.append(f"{step_num}. Start using slash commands with your AI agent:")
 
     steps_lines.append("   2.1 [cyan]/arckit.constitution[/] - Establish project principles with adaptive reasoning")
-    steps_lines.append("   2.2 [cyan]/arckit.define[/] - Create adaptive baseline specification")
-    steps_lines.append("   2.3 [cyan]/arckit.analyze[/] - Analyze spec for consistency and adaptation readiness")
-    steps_lines.append("   2.4 [cyan]/arckit.design[/] - Design adaptive architecture")
-    steps_lines.append("   2.5 [cyan]/arckit.plan[/] - Create implementation plan with evolution strategies")
-    steps_lines.append("   2.6 [cyan]/arckit.chain[/] - Generate adaptive task chains")
-    steps_lines.append("   2.7 [cyan]/arckit.implement[/] - Execute implementation with adaptation monitoring")
+    steps_lines.append("   2.2 [cyan]/arckit.define[/] - Define what needs to be built with clear requirements")
+    steps_lines.append("   2.3 [cyan]/arckit.plan[/] - Plan how to build it with implementation approach")
+    steps_lines.append("   2.4 [cyan]/arckit.tasks[/] - Generate detailed implementation tasks from your plan")
+    steps_lines.append("   2.5 [cyan]/arckit.implement[/] - Execute implementation with testing and validation")
 
-    steps_panel = Panel("\n".join(steps_lines), title="Next Steps", border_style="cyan", padding=(1,2))
+    steps_panel = Panel("\n".join(steps_lines), title="Core Workflow Commands", border_style="cyan", padding=(1,2))
     console.print()
     console.print(steps_panel)
 
     enhancement_lines = [
-        "Optional commands that you can use for your specs [bright_black](improve quality & confidence)[/bright_black]",
+        "Enhancement commands for advanced scenarios [bright_black](improve quality & confidence)[/bright_black]",
         "",
-        f"○ [cyan]/arckit.clarify[/] [bright_black](optional)[/bright_black] - Ask structured questions to de-risk ambiguous areas before planning (run before [cyan]/arckit.plan[/] if used)",
-        f"○ [cyan]/arckit.checklist[/] [bright_black](optional)[/bright_black] - Generate adaptive quality checklists to validate requirements completeness, clarity, and evolution readiness (after [cyan]/arckit.plan[/])"
+        f"○ [cyan]/arckit.analyze[/] [bright_black](optional)[/bright_black] - Analyze specifications and plans for consistency and quality",
+        f"○ [cyan]/arckit.clarify[/] [bright_black](optional)[/bright_black] - Clarify underspecified areas in requirements",
+        f"○ [cyan]/arckit.checklist[/] [bright_black](optional)[/bright_black] - Generate custom quality checklists for validation",
+        f"○ [cyan]/arckit.taskstoissues[/] [bright_black](optional)[/bright_black] - Convert tasks to issue tracking items"
     ]
     enhancements_panel = Panel("\n".join(enhancement_lines), title="Enhancement Commands", border_style="cyan", padding=(1,2))
     console.print()
@@ -1364,9 +1364,7 @@ class ArcKitTemplates:
             'constitution': self.commands_dir / "constitution.md",
             'define': self.commands_dir / "define.md",
             'analyze': self.commands_dir / "analyze.md",
-            'design': self.commands_dir / "design.md",
             'plan': self.commands_dir / "plan.md",
-            'chain': self.commands_dir / "chain.md",
             'implement': self.commands_dir / "implement.md",
             'checklist': self.commands_dir / "checklist.md",
             'clarify': self.commands_dir / "clarify.md",

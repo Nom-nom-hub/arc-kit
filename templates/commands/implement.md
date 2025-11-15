@@ -1,12 +1,12 @@
 ---
-description: Execute adaptive implementation using dynamic reasoning chains and context-aware deployment strategies.
+description: Execute adaptive implementation using dynamic reasoning chains, evolution tracking, and context-aware deployment strategies with continuous adaptation feedback.
 handoffs:
   - label: Create Adaptive Testing Plan
     agent: arckit.checklist
-    prompt: Create adaptive quality assurance checklist...
-  - label: Update Adaptive Architecture
-    agent: arckit.design
-    prompt: Update architecture based on implementation learning
+    prompt: Create adaptive quality assurance checklist with evolution scenarios...
+  - label: Analyze Implementation Results
+    agent: arckit.analyze
+    prompt: Analyze implementation results for consistency, adaptation readiness, and evolution planning
     send: true
 scripts:
   sh: scripts/bash/create-new-feature.sh --json "{ARGS}"
@@ -24,10 +24,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for TASKS_FILE, IMPLEMENTATION_DIR, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read TASKS_FILE, PLAN_FILE, DESIGN_FILE, SPEC_FILE, and `.arc/memory/constitution.md`.
+2. **Load adaptive context**: Read TASKS_FILE, PLAN_FILE, SPEC_FILE, and `.arc/memory/constitution.md`. Consider:
+   - Current implementation tasks and their evolution scenarios
+   - Context dependencies and deployment environments
+   - Adaptive quality standards and success criteria
+   - Evolution tracking requirements and adaptation feedback mechanisms
 
 3. **Execute adaptive implementation workflow**:
-   - Initialize Adaptive Implementation Environment
+   - Initialize Adaptive Implementation Environment with evolution tracking
    - Execute Context-Sensitive Implementation Tasks
    - Apply Evolution Management Techniques
    - Integrate Reasoning Chain Logic

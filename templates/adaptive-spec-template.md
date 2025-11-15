@@ -4,151 +4,190 @@
 **Created**: [DATE]
 **Status**: Draft
 **Input**: User description: "$ARGUMENTS"
+**Evolution Plan**: [Reference to evolution scenarios and adaptability plans]
+**Context Dependencies**: [List of environments and contexts this feature must support]
 
-## User Scenarios & Testing *(adaptive)*
+## User Scenarios & Adaptive Testing
 
 <!--
-  IMPORTANT: User stories should be PRIORITIZED as adaptive user journeys ordered by importance.
-  Each user story/journey must be INDEPENDENTLY TESTABLE across different contexts and
-  able to ADAPT to changing requirements - meaning if you implement just ONE of them,
-  you should still have a viable MVP (Minimum Viable Product) that delivers value and can evolve.
+  IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
+  Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
+  you should still have a viable MVP (Minimum Viable Product) that delivers value.
 
   Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
   Think of each story as a standalone slice of functionality that can be:
   - Developed independently
-  - Tested independently across contexts
+  - Tested independently
   - Deployed independently
   - Demonstrated to users independently
-  - Adapted to changing requirements independently
+  - Evolved independently
 -->
 
 ### User Story 1 - [Brief Title] (Priority: P1)
 
-[Describe this user journey in plain language with adaptive considerations]
+[Describe this user journey in plain language]
 
 **Why this priority**: [Explain the value and why it has this priority level]
 
-**Independent Test**: [Describe how this can be tested independently across different contexts]
+**Independent Test**: [Describe how this can be tested independently]
 
-**Context-Aware Acceptance Scenarios**:
+**Adaptive Considerations**: [How might this user story need to evolve over time?]
 
-1. **Given** [initial context], **When** [action in context], **Then** [expected adaptive outcome]
-2. **Given** [different context], **When** [action in context], **Then** [expected adaptive outcome]
-3. **Given** [evolving requirement], **When** [adaptation trigger], **Then** [adaptive response]
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [user action], **Then** [expected outcome]
+2. **Given** [different state], **When** [user action], **Then** [expected outcome]
+3. **Given** [edge case], **When** [user action], **Then** [expected outcome]
+
+**Evolution Scenarios**:
+
+1. **If requirement changes to [X]**: [How this story might need to adapt]
+2. **If user base grows by [Y]**: [How this story scales]
+3. **If context changes to [Z]**: [How this story adapts to different environments]
 
 ---
 
 ### User Story 2 - [Brief Title] (Priority: P2)
 
-[Describe this user journey in plain language with adaptive considerations]
+[Describe this user journey in plain language]
 
 **Why this priority**: [Explain the value and why it has this priority level]
 
-**Independent Test**: [Describe how this can be tested independently across different contexts]
+**Independent Test**: [Describe how this can be tested independently]
 
-**Context-Aware Acceptance Scenarios**:
+**Adaptive Considerations**: [How might this user story need to evolve over time?]
 
-1. **Given** [initial context], **When** [action in context], **Then** [expected adaptive outcome]
-2. **Given** [evolving requirement], **When** [adaptation trigger], **Then** [adaptive response]
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [user action], **Then** [expected outcome]
+2. **Given** [edge case], **When** [user action], **Then** [expected outcome]
+
+**Evolution Scenarios**:
+
+1. **If requirement changes to [X]**: [How this story might need to adapt]
+2. **If user base grows by [Y]**: [How this story scales]
 
 ---
 
-[Add more user stories as needed, each with an assigned priority and adaptive considerations]
+[Add more user stories as needed, each with an assigned priority and evolution considerations]
 
 ### Adaptive Edge Cases
 
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right adaptive edge cases.
+  Fill them out with the right edge cases.
+  Consider: How will edge cases change as requirements evolve?
 -->
 
-- What happens when [context changes suddenly]?
-- How does system handle [requirement evolution]?
-- What if [adaptation fails]?
-- How does system behave when [feedback indicates change needed]?
+- What happens when [input is invalid] and system needs to adapt to new data formats?
+- How does system handle [high load] and adapt to scaling requirements?
+- What if [dependency fails] and we need to switch to alternative services?
+- How does system behave when [user abandons operation] and their requirements change?
+- What happens when [requirements evolve] and the original edge case logic no longer applies?
 
 ## Adaptive Requirements *(mandatory)*
 
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right adaptive functional requirements.
+  Fill them out with the right functional requirements.
+  Each requirement should include adaptability considerations.
 -->
 
 ### Adaptive Functional Requirements
 
-- **AFR-001**: System MUST [specific capability that can adapt to context]
-- **AFR-002**: System MUST [capability that evolves with requirements]
-- **AFR-003**: Users MUST be able to [key interaction that adapts to context]
-- **AFR-004**: System MUST [adaptive data persistence that evolves]
-- **AFR-005**: System MUST [context-aware behavior that learns from usage]
+- **FR-001**: System MUST [specific capability] with ability to [adapt to future changes]
+- **FR-002**: System MUST [specific capability] with evolution path for [future enhancements]
+- **FR-003**: Users MUST be able to [key interaction] with [flexibility for requirement changes]
+- **FR-004**: System MUST [data handling capability] supporting [schema evolution strategies]
+- **FR-005**: System MUST [security or performance requirement] with [adaptability measures]
 
-*Example of marking unclear adaptive requirements:*
+*Example of marking unclear requirements:*
 
-- **AFR-006**: System MUST adapt user interface based on [NEEDS CLARIFICATION: adaptation criteria not specified - user behavior, device context, usage patterns?]
-- **AFR-007**: System MUST evolve recommendations based on [NEEDS CLARIFICATION: feedback mechanism not specified]
+- **FR-006**: System MUST [behavior] based on [NEEDS CLARIFICATION: specific requirement not specified] with [evolution considerations]
+- **FR-007**: System MUST [behavior] [NEEDS CLARIFICATION: specific requirement not specified] with [adaptation strategy]
 
 ### Adaptive Key Entities *(include if feature involves data)*
 
-- **[Entity 1]**: [What it represents, key attributes that can evolve, relationships to other entities]
-- **[Entity 2]**: [What it represents, attributes that adapt to context, relationships that evolve]
+- **[Entity 1]**: [What it represents, key attributes, relationships to other entities] with [schema evolution plan] and [migration strategies]
+- **[Entity 2]**: [What it represents, key attributes, relationships to other entities] with [flexibility for future attributes] and [backward compatibility plan]
 
-### Adaptation Mechanisms
-
-- **AM-001**: How the system detects [context change / requirement evolution / user behavior shift]
-- **AM-002**: How the system responds to [detected change] with [adaptive action]
-- **AM-003**: How the system learns from [user feedback / usage patterns / environmental changes]
-
-## Success Criteria *(adaptive)*
+## Adaptive Success Criteria
 
 <!--
-  ACTION REQUIRED: Define measurable adaptive success criteria.
-  These must be technology-agnostic, measurable, and able to evolve with changing requirements.
+  ACTION REQUIRED: Define measurable success criteria.
+  These must be technology-agnostic, measurable, verifiable, AND adaptable to changing requirements.
+  Include both current success metrics and how success will be measured as requirements evolve.
 -->
 
-### Adaptive Measurable Outcomes
+### Current Measurable Outcomes
 
-- **ASO-001**: [Context-aware metric, e.g., "Users can complete account creation in under 2 minutes in normal context, 3 minutes in high-traffic context"]
-- **ASO-002**: [Adaptation metric, e.g., "System handles 1000 concurrent users normally, adapts to handle 1500 during peak with slight performance trade-off"]
-- **ASO-003**: [Learning metric, e.g., "System adaptation improves user satisfaction by 10% within 30 days of deployment"]
-- **ASO-004**: [Evolution metric, e.g., "System successfully adapts to new user behavior patterns within 7 days of detection"]
+- **SO-001**: [Metric, e.g., "Users can complete account creation in under 2 minutes"]
+- **SO-002**: [Metric, e.g., "System handles 1000 concurrent users"]
+- **SO-003**: [Metric, e.g., "User satisfaction score of 4.5/5 or higher"]
 
-### Adaptation Validation Criteria
+### Evolution Success Criteria
 
-- **AVC-001**: [How to validate that adaptation is working effectively]
-- **AVC-002**: [How to measure that evolution is improving the system]
-- **AVC-003**: [Metrics for determining when adaptation fails and fallbacks are needed]
+- **ES-001**: [How success will be measured as user base scales: e.g., "Maintains performance as user base grows 10x"]
+- **ES-002**: [How success adapts to changing requirements: e.g., "Successfully incorporates 3 new features per quarter with minimal refactoring"]
+- **ES-003**: [How adaptability is measured: e.g., "Requirements can be modified with less than 2 weeks of engineering time"]
 
-## Context Considerations *(adaptive)*
+## Adaptive Assumptions and Dependencies
 
-### Context Types
+### Adaptive Assumptions
 
-- **User Context**: [How the system adapts to different user types/profiles]
-- **Environmental Context**: [How the system adapts to different usage environments]
-- **Temporal Context**: [How the system adapts to different times/usage patterns]
-- **Load Context**: [How the system adapts to varying load conditions]
+- [List assumptions made during specification and how they might change]
+- [What conditions are assumed to be true and how to handle changes]
+- [What external factors are assumed to remain stable and adaptation plans if they change]
 
-### Adaptation Triggers
+### Adaptive Dependencies
 
-- **Trigger 1**: [What causes the system to adapt]
-- **Trigger 2**: [What conditions trigger adaptation]
-- **Trigger 3**: [What feedback indicates need for evolution]
+- [List external dependencies needed for this feature and alternative strategies if they change]
+- [APIs, services, or other features this depends on with migration paths]
+- [Any third-party services or libraries required with vendor lock-in avoidance strategies]
 
-### Adaptation Constraints
+### Evolution Scenarios
 
-- **AC-001**: [What should NOT change during adaptation]
-- **AC-002**: [Constraints on how much the system can adapt]
-- **AC-003**: [Safety bounds for adaptation]
+- **Scenario 1**: [What if core business requirements change? - Include adaptation strategy]
+- **Scenario 2**: [What if user needs evolve significantly? - Include adaptation strategy]
+- **Scenario 3**: [What if technology landscape changes? - Include migration strategy]
+- **Scenario 4**: [What if regulatory requirements change? - Include compliance adaptation strategy]
 
-## Learning & Improvement *(adaptive)*
+## Adaptive Quality Considerations
 
-### Feedback Mechanisms
+### Testability Requirements
 
-- **FM-001**: [How the system collects feedback on its performance]
-- **FM-002**: [How user behavior is monitored for adaptation triggers]
-- **FM-003**: [How system effectiveness is measured]
+- Each user story must be independently testable in isolation
+- System must support testing of evolution scenarios (how feature behaves when requirements change)
+- All acceptance scenarios must include verification of adaptability
 
-### Improvement Opportunities
+### Performance Adaptability
 
-- **IO-001**: [Where the system can improve through adaptation]
-- **IO-002**: [How the system can learn from its mistakes]
-- **IO-003**: [How to incorporate lessons learned into future behavior]
+- System performance requirements must account for evolutionary changes
+- Scalability requirements must consider adaptation overhead
+- Latency requirements must include time for configuration updates
+
+### Security Adaptability
+
+- Security requirements must account for change in requirements over time
+- Access control must support evolution of user roles and permissions
+- Data protection must account for schema evolution
+
+## Migration and Deployment Considerations
+
+### Backward Compatibility
+
+- How will existing users be affected by changes?
+- What migration paths will be provided?
+- How will data schemas evolve while maintaining compatibility?
+
+### Deployment Strategies
+
+- How will the feature be deployed across different contexts/environments?
+- How will changes be rolled out gradually to minimize disruption?
+- How will the system handle A/B testing of new evolutionary features?
+
+### Monitoring and Feedback
+
+- How will the system's adaptability be monitored?
+- What metrics will indicate successful adaptation to changing requirements?
+- How will user feedback inform evolutionary changes?

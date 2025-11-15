@@ -1,6 +1,6 @@
 # Arc Kit - Adaptive Reasoning Chains Toolkit
 
-Arc Kit revolutionizes software development with **Adaptive Reasoning Chains (ARC)**, a breakthrough methodology that surpasses traditional approaches like Spec Kit by creating systems that can dynamically evolve with changing requirements and context.
+Arc Kit provides a practical framework for software development with **Adaptive Reasoning Chains (ARC)**, combining iterative development with adaptive planning. This methodology enables teams to create software that can evolve with changing requirements while maintaining high quality and clear documentation.
 
 ## 🚀 Installation
 
@@ -10,33 +10,36 @@ Install Arc Kit directly from the GitHub repository using uv:
 uv tool install git+https://github.com/Nom-nom-hub/arc-kit.git
 ```
 
-## 🚀 The Breakthrough: Adaptive Reasoning Chains
+## 🚀 The ARC Approach: Adaptive Reasoning Chains
 
-While traditional methodologies create static specifications, Arc Kit introduces **Adaptive Reasoning Chains** - a methodology where specifications, architectures, and implementations can evolve intelligently based on context, feedback, and changing requirements.
+While traditional methodologies create rigid specifications, Arc Kit provides **Adaptive Reasoning Chains** - a practical methodology where specifications, architectures, and implementations can evolve based on feedback, changing requirements, and implementation learnings.
 
-### Key Innovations
+### Key Benefits
 
-1. **Context-Aware Reasoning**: Systems understand and adapt to changing contexts automatically
-2. **Dynamic Evolution**: Specifications evolve based on user feedback and changing requirements
-3. **Predictive Validation**: Identifies potential issues before they occur
-4. **Self-Improving Methodology**: Learns from each project to enhance future development
-5. **Multi-Agent Collaboration**: Enables reasoning chains across multiple AI agents
+1. **Iterative Refinement**: Specifications evolve based on real feedback and implementation learnings
+2. **Clear Reasoning**: All decisions are documented with clear reasoning chains
+3. **Adaptive Planning**: Development plans adjust to new information and challenges
+4. **Practical Implementation**: Focused on actionable steps and real-world applicability
+5. **Collaborative Development**: Facilitates both human teams and human-AI collaboration
 
 ## 📋 Core Commands
 
-Arc Kit provides 11 core commands that implement the adaptive reasoning chain methodology:
+Arc Kit provides 9 commands following the adaptive reasoning chain methodology:
 
-- `/arckit.constitution` - Establish adaptive project principles
-- `/arckit.define` - Create adaptive specifications that evolve with requirements
-- `/arckit.analyze` - Analyze specs for consistency and adaptation readiness
-- `/arckit.design` - Design adaptive architectures with evolution paths
-- `/arckit.plan` - Plan implementation with adaptation strategies
-- `/arckit.chain` - Generate adaptive task chains with reasoning links
-- `/arckit.tasks` - Generate adaptive tasks with context awareness
-- `/arckit.taskstoissues` - Convert adaptive tasks to GitHub issues with traceability
-- `/arckit.implement` - Execute implementation with adaptation monitoring
-- `/arckit.checklist` - Create adaptive quality checklists
-- `/arckit.clarify` - Adaptive clarification with context considerations
+### Core Workflow Commands
+
+- `/arckit.constitution` - Establish project principles and development guidelines
+- `/arckit.define` - Define what needs to be built with clear requirements
+- `/arckit.plan` - Plan how to build it with implementation approach
+- `/arckit.tasks` - Generate detailed implementation tasks from your plan
+- `/arckit.implement` - Execute the implementation with testing and validation
+
+### Enhancement Commands
+
+- `/arckit.analyze` - Analyze specifications and plans for consistency and quality
+- `/arckit.clarify` - Clarify underspecified areas in requirements
+- `/arckit.checklist` - Generate custom quality checklists for validation
+- `/arckit.taskstoissues` - Convert tasks to issue tracking items
 
 ## 🏗️ Project Structure
 
@@ -55,14 +58,14 @@ arc-kit/
 
 ## 🎯 Adaptive Reasoning Chain Process
 
-The ARC methodology transforms development from a linear process to an adaptive one:
+The ARC methodology follows an iterative process:
 
-1. **Adaptive Specification** → Specifications that evolve based on feedback
-2. **Context-Aware Analysis** → Dynamic analysis that adapts to changing requirements
-3. **Evolution-Ready Design** → Architectures designed for continuous evolution
-4. **Adaptive Planning** → Implementation plans with built-in adaptation strategies
-5. **Reasoning Chain Execution** → Task chains with learning and adaptation capabilities
-6. **Continuous Improvement** → Systems that improve with each iteration
+1. **Specification** → Create initial specifications that can evolve
+2. **Analysis** → Assess technical feasibility and identify risks
+3. **Design** → Create adaptable architecture and components
+4. **Planning** → Develop implementation plan with adaptation strategies
+5. **Implementation** → Execute with continuous learning and adaptation
+6. **Validation** → Ensure quality and alignment with requirements
 
 ## 📚 Documentation
 
@@ -74,24 +77,22 @@ The ARC methodology transforms development from a linear process to an adaptive 
 
 | Aspect | Traditional Approach | Arc Kit (Adaptive Reasoning Chains) |
 |--------|----------|--------------------------------------|
-| Specifications | Static documents | Adaptive, evolving specifications |
-| Adaptability | Fixed requirements | Dynamic adaptation to change |
-| Evolution | Manual updates | Automated evolution based on feedback |
-| Intelligence | Rule-based | Predictive, learning-capable |
-| Context Awareness | Limited | Deep context understanding |
-| Knowledge Transfer | Disconnected projects | Institutional learning |
+| Specifications | Rigid, static documents | Living, evolving specifications |
+| Adaptability | Fixed requirements | Flexible adaptation to change |
+| Evolution | Manual updates when needed | Iterative evolution based on feedback |
+| Implementation | Theoretical focus | Practical, action-oriented |
+| Collaboration | Human teams only | Human and AI collaboration |
+| Documentation | Separate from code | Integrated reasoning chains |
 
-## 🌟 The Adaptive Revolution
+## 🌟 Practical Development with ARC
 
-Arc Kit represents a fundamental shift from static specification-driven development to adaptive reasoning chains. Instead of creating fixed specifications that become outdated, Arc Kit creates living systems that evolve intelligently with changing requirements, context, and feedback.
+Arc Kit provides a practical, adaptable framework that combines the benefits of structured development with the flexibility to respond to change. The methodology:
 
-This breakthrough methodology enables:
+- **Starts Practical**: Focuses on actionable steps teams can immediately implement
+- **Adapts to Reality**: Adjusts to actual implementation challenges and discoveries
+- **Documents Reasoning**: Maintains clear chains of reasoning for all decisions
+- **Encourages Collaboration**: Works well for both human teams and human-AI collaboration
+- **Maintains Quality**: Includes continuous validation and quality checks
+- **Manages Complexity**: Provides structure for handling complex, evolving requirements
 
-- **Dynamic Requirements**: Specifications that adapt to changing needs
-- **Intelligent Architecture**: Systems designed for continuous evolution
-- **Predictive Development**: Proactive identification and resolution of issues
-- **Learning Systems**: Methodology that improves with each project
-- **Context-Aware Solutions**: Understanding of environmental factors
-- **Collaborative Intelligence**: Multi-agent learning and coordination
-
-Welcome to the future of adaptive software development with Arc Kit!
+Welcome to practical, adaptive software development with Arc Kit!

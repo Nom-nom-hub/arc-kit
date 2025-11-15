@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # /// script
+# requires-python = false
 # depends = ["jq"]
 # ///
 
@@ -133,52 +134,123 @@ ensure_constitution_exists() {
     if [[ ! -f "$constitution_path" ]]; then
         mkdir -p "$(dirname "$constitution_path")"
         cat > "$constitution_path" << 'EOF'
-# Project Constitution
+# Adaptive Project Constitution
 
-**Version**: 1.0
+**Version**: 2.0
 **Created**: [DATE]
+**Last Updated**: [DATE]
+**Evolution Plan**: [Path to evolution scenarios and adaptation strategies]
+**Context Dependencies**: [Environments and contexts this constitution must support]
 
 ## Purpose
 
-This constitution establishes the governance principles for the project development team. These principles guide decision-making and ensure consistency across all development activities.
+This constitution establishes the governance principles for the adaptive project development team. These principles guide decision-making and ensure consistency across all development activities with sophisticated adaptation mechanisms, evolution planning, and context awareness integrated throughout.
 
-## Core Principles
+## Core Adaptive Principles
 
-### Article I: Adaptive Architecture Principle
-- All system components must be designed for evolution
-- Changes should be gradual and safe
-- Interfaces should be versioned and backward-compatible
-- Architecture should accommodate changing requirements
+### Article I: Advanced Adaptive Architecture Principle
+- All system components must be designed for independent evolution across multiple contexts
+- Changes should be gradual, safe, and reversible with rollback mechanisms
+- Interfaces should be versioned, backward-compatible, and context-aware with intelligent adaptation
+- Architecture should accommodate changing requirements with learning mechanisms
+- Components must support dynamic configuration and context switching
+- Evolution pathways must be planned and validated before implementation
 
-### Article II: Test-First Development
-- All implementation must follow strict Test-Driven Development
-- Unit tests must be written before implementation code
-- Tests must be validated and approved before implementation begins
-- All tests must initially fail (Red phase) before implementation
+### Article II: Adaptive Test-First Development with Learning
+- All implementation must follow strict Test-Driven Development with evolution scenarios
+- Unit tests must be written before implementation code with context variations
+- Tests must be validated and approved before implementation begins with adaptation verification
+- All tests must initially fail (Red phase) before implementation across all contexts
+- Tests must include evolution scenario validation and feedback mechanism verification
+- Context-switching tests must validate seamless transitions
 
-### Article III: Library-First Development
-- Every feature must begin as a standalone library
+### Article III: Adaptive Library-First Development with Context Isolation
+- Every feature must begin as a standalone, context-aware library
 - No feature should be implemented directly in application code without first being abstracted
-- Libraries should have clear boundaries and minimal dependencies
-- All functionality should be accessible through well-defined interfaces
+- Libraries should have clear boundaries, minimal dependencies, and cross-context compatibility
+- All functionality should be accessible through well-defined, adaptive interfaces
+- Libraries must support evolution with backward compatibility mechanisms
+- Context adapters must be designed as separate components
 
-## Development Guidelines
+### Article IV: Continuous Learning & Reasoning Chain Integration
+- All decisions must be documented with reasoning chains linking to outcomes
+- Learning mechanisms must be built into every component to improve adaptation
+- Feedback loops must connect implementation effectiveness to design decisions
+- Evolution impact must be traced from requirements to implementation
+- Context-specific adaptation effectiveness must be continuously measured
+- Knowledge gained must inform future architectural decisions
 
-### Implementation Requirements
-- [ ] All code must have corresponding tests
-- [ ] New features must be implemented as libraries first
-- [ ] All external interfaces must be well documented
-- [ ] Error handling must be comprehensive and user-friendly
+### Article V: Evolution-Ready Development
+- All code must be designed with evolution pathways in mind
+- Schema migration strategies must be planned before implementation
+- Backward compatibility must be maintained during evolution
+- Evolution scenarios must be tested before changes are implemented
+- Rollback strategies must be designed before forward evolution
+- Cross-component evolution dependencies must be managed systematically
 
-### Quality Standards
-- [ ] Code must pass all existing tests
-- [ ] New tests must achieve 80%+ coverage
-- [ ] Performance requirements must be met
-- [ ] Security standards must be maintained
+## Advanced Development Guidelines
 
-## Change Process
+### Adaptive Implementation Requirements
+- [ ] All code must have corresponding cross-context tests
+- [ ] New features must be implemented as context-aware libraries first
+- [ ] All external interfaces must be versioned and backward-compatible
+- [ ] Error handling must be comprehensive and context-adaptive with intelligent fallbacks
+- [ ] Context switching mechanisms must be seamless and state-preserving
+- [ ] Adaptation effectiveness metrics must be implemented and monitored
+- [ ] Reasoning chains must link all decisions to outcomes with evolution impact
 
-This constitution may be updated as the team learns and evolves. Changes should be made thoughtfully with team input and clear justification.
+### Adaptive Quality Standards
+- [ ] Code must pass all existing tests across all contexts
+- [ ] New tests must achieve 80%+ coverage including evolution scenarios
+- [ ] Performance requirements must be met with context switching overhead accounted for
+- [ ] Security standards must be maintained across all contexts
+- [ ] Adaptation effectiveness must be measured and validated
+- [ ] Evolution readiness must be verified for all components
+- [ ] Context isolation must prevent cross-contamination
+
+### Adaptive Evolution Requirements
+- [ ] Schema evolution strategies must be defined for all data components
+- [ ] Migration paths must be tested and validated before implementation
+- [ ] Backward compatibility layers must be implemented where needed
+- [ ] Evolution scenarios must be tested with real data and contexts
+- [ ] Rollback mechanisms must be validated across all contexts
+- [ ] Cross-component evolution dependencies must be managed
+
+## Adaptive Architecture Standards
+
+### Context Management
+- [ ] Context detection mechanisms must be reliable and fast
+- [ ] Context-specific configurations must be isolated and manageable
+- [ ] Cross-context data consistency must be maintained
+- [ ] Context switching must be transparent to end users
+- [ ] Context-specific performance requirements must be met
+
+### Adaptation Mechanisms
+- [ ] Adaptation logic must be separate from core business logic
+- [ ] Learning algorithms must improve adaptation over time
+- [ ] Feedback integration must be real-time and reliable
+- [ ] Adaptation effectiveness must be continuously measured
+- [ ] Fallback mechanisms must be available for failed adaptations
+
+### Evolution Management
+- [ ] Evolution pathways must be planned before implementation
+- [ ] Migration strategies must be tested with real data
+- [ ] Backward compatibility must be verified for all changes
+- [ ] Evolution impact analysis must be performed for all changes
+- [ ] Rollback procedures must be documented and tested
+
+## Change Process with Learning Integration
+
+This constitution may be updated as the team learns and evolves. Changes should be made thoughtfully with team input, clear justification, and consideration for evolution pathways. All changes must follow the same adaptive principles and include:
+
+- Reasoning chains connecting the change to business outcomes
+- Evolution scenarios for how the change might need to adapt
+- Context impact analysis across all target environments
+- Backward compatibility strategies
+- Testing requirements including evolution scenarios
+- Rollback procedures for the constitutional change
+
+Updates to this constitution must be validated across all contexts and evolution scenarios before implementation.
 
 EOF
     fi

@@ -1,12 +1,13 @@
 ---
-description: Execute adaptive analysis workflow using dynamic reasoning chains to evaluate specifications for adaptation readiness.
+description: Execute comprehensive adaptive analysis workflow using dynamic reasoning chains to evaluate specifications for adaptation readiness, consistency, and evolution planning.
 handoffs:
-  - label: Create Adaptive Design
-    agent: arckit.design
-    prompt: Create an adaptive design based on analysis results...
-  - label: Identify Adaptation Risks
+  - label: Plan for Adaptation Risks
     agent: arckit.plan
-    prompt: Plan for identified risks and adaptation challenges
+    prompt: Plan for identified risks and adaptation challenges with evolution strategies
+    send: true
+  - label: Clarify Requirements
+    agent: arckit.clarify
+    prompt: Clarify underspecified areas identified in the analysis with evolution considerations
     send: true
 scripts:
   sh: scripts/bash/analyze-spec.sh --json

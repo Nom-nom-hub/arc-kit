@@ -1,12 +1,12 @@
 ---
-description: Execute adaptive implementation planning using dynamic reasoning chains and evolution-ready strategies.
+description: Execute adaptive implementation planning with clear phases, evolution strategies, and context-aware deliverables.
 handoffs:
   - label: Generate Adaptive Tasks
-    agent: arckit.chain
-    prompt: Generate adaptive task chains based on the plan...
-  - label: Create Adaptive Checklist
+    agent: arckit.tasks
+    prompt: Generate adaptive implementation tasks that consider evolution scenarios and context dependencies...
+  - label: Create Quality Checklist
     agent: arckit.checklist
-    prompt: Create an adaptive checklist for the implementation plan
+    prompt: Create a quality checklist for the adaptive implementation plan
     send: true
 scripts:
   sh: scripts/bash/setup-plan.sh --json
@@ -28,139 +28,147 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for DESIGN_FILE, PLAN_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read DESIGN_FILE, SPEC_FILE, and `.arc/memory/constitution.md`. Load PLAN_FILE template (already copied).
+2. **Load adaptive context**: Read DESIGN_FILE, SPEC_FILE, and `.arc/memory/constitution.md`. Load PLAN_FILE template (already copied). Consider:
+   - Current implementation requirements from the specification
+   - Evolution scenarios and potential requirement changes
+   - Context dependencies and system constraints
+   - Adaptive quality standards from the constitution
 
 3. **Execute adaptive planning workflow**: Follow the structure in PLAN_FILE template to:
-   - Define Evolution Strategy (how implementation adapts to change)
-   - Create Adaptive Task Breakdown (dynamic tasks that evolve)
-   - Design Context-Sensitive Execution (behavior changes with environment)
-   - Plan Risk Mitigation with Adaptation (evolving risk management)
-   - **CRITICAL**: Establish comprehensive testing strategy (unit, integration, system tests)
-   - **CRITICAL**: Plan functionality verification procedures for all features
-   - **CRITICAL**: Design dependency validation and integration testing approach
-   - **CRITICAL**: Plan error handling and edge case verification procedures
-   - Establish Quality Assurance for Adaptive Systems (validation during change)
-   - Design Learning & Improvement mechanisms
+   - Define Adaptive Implementation Strategy (practical approach that supports evolution)
+   - Create Task Breakdown with evolution considerations (specific, actionable tasks that account for future changes)
+   - Design Execution Approach with context awareness (how to execute the plan considering different environments)
+   - Plan Adaptive Risk Mitigation (how to handle potential problems including evolution-related risks)
+   - **CRITICAL**: Establish comprehensive testing strategy (unit, integration, system tests) including:
+     - Tests for current functionality
+     - Tests for evolution scenarios (how features behave when requirements change)
+     - Context-aware testing (validation across different deployment environments)
+   - **CRITICAL**: Plan functionality verification procedures that consider adaptability
+   - **CRITICAL**: Design dependency validation and integration testing with evolution in mind
+   - **CRITICAL**: Plan error handling and edge case verification with adaptation strategies
+   - Establish Adaptive Quality Assurance procedures (validation during implementation that considers evolution)
+   - Design Context Feedback mechanisms (how to gather feedback in different deployment scenarios)
 
 4. **Adaptive Planning Validation**: Validate plan against:
-   - Adaptation requirements from spec and design
-   - Context switching readiness
-   - Evolution pathway feasibility
+   - Implementation requirements from spec and design
+   - Feasibility assessment including adaptation feasibility
+   - Quality standards and evolution strategies
+   - Context dependencies and cross-environment considerations
 
 5. **Generate Adaptive Planning Artifacts**: Create planning documents that incorporate:
-   - Dynamic milestones
-   - Context-aware deliverables
-   - Learning mechanisms
+   - Clear milestones
+   - Defined deliverables
+   - Progress tracking mechanisms
 
-## Evolution Strategy
+## Implementation Strategy
 
-### Dynamic Implementation Approach
+### Practical Implementation Approach
 
-1. **Adaptation Mechanisms**:
-   - How implementation will adapt to changing requirements
-   - Phases designed for iterative improvement
-   - Feedback integration points
+1. **Development Approach**:
+   - How implementation will be approached step by step
+   - Phases designed for iterative progress
+   - Integration points with existing system
 
-2. **Context Sensitivity**:
-   - How implementation approach changes with environment
+2. **Resource Allocation**:
+   - How to allocate time and effort efficiently
    - Conditional strategies for different scenarios
-   - Resource allocation that adapts to needs
+   - Resource planning for different complexity levels
 
-3. **Evolution Pathways**:
+3. **Implementation Pathways**:
    - Multiple implementation paths for different contexts
-   - Fork and merge strategies for divergent evolution
-   - Rollback mechanisms for failed adaptations
+   - Alternative approaches if primary path fails
+   - Contingency plans for technical challenges
 
-## Adaptive Task Breakdown
+## Task Breakdown
 
-### Dynamic Task Management
+### Task Management
 
-1. **Context-Adaptive Tasks**:
-   - Tasks with dynamic priority based on context
-   - Dependencies that may change during implementation
-   - Milestones that adjust to evolving specifications
+1. **Structured Tasks**:
+   - Tasks with clear priority and dependencies
+   - Dependencies that are well-defined and manageable
+   - Milestones that track progress against requirements
 
-2. **Evolution-Ready Dependencies**:
-   - Dependencies designed to accommodate change
-   - Alternative dependency paths for different contexts
-   - Dependency management during evolution
+2. **Well-Defined Dependencies**:
+   - Dependencies with clear requirements
+   - Alternative paths when dependencies are delayed
+   - Dependency tracking and management
 
-3. **Feedback-Driven Task Evolution**:
-   - How tasks evolve based on intermediate results
-   - Dynamic task creation during execution
-   - Conditional task dependencies
+3. **Progress-Driven Tasks**:
+   - How tasks progress based on intermediate results
+   - Task completion criteria
+   - Task assignment and tracking procedures
 
-## Risk Mitigation with Adaptation
+## Risk Mitigation
 
-### Adaptive Risk Management
+### Risk Management
 
-1. **Evolution Risks**:
-   - Risks to adaptation process itself
-   - Mitigation strategies that evolve with new information
-   - Contingency plans for failed adaptations
+1. **Technical Risks**:
+   - Risks related to implementation complexity
+   - Mitigation strategies with clear actions
+   - Contingency plans for technical failures
 
-2. **Context Transition Risks**:
-   - Risks during context switching
-   - Mitigation for rapid or unexpected context changes
-   - Fallback strategies for context transition failures
+2. **Timeline Risks**:
+   - Risks related to schedule delays
+   - Mitigation for unexpected complexity
+   - Fallback strategies for timeline pressure
 
-3. **Learning System Risks**:
-   - Risks from incorrect learning or adaptation
-   - Validation mechanisms for learning outcomes
-   - Human oversight requirements for critical adaptations
+3. **Quality Risks**:
+   - Risks to code quality and functionality
+   - Validation mechanisms for deliverables
+   - Quality control checkpoints
 
-## Quality Assurance for Adaptive Systems
+## Quality Assurance
 
-### Adaptive Validation Strategies
+### Validation Strategies
 
-1. **Dynamic Testing**:
-   - Testing strategies that account for change
-   - Validation methods for evolving components
-   - Quality gates that adjust to new requirements
+1. **Testing Approach**:
+   - Testing strategies that account for requirements
+   - Validation methods for different components
+   - Quality gates that ensure standards
 
-2. **Context-Sensitive Validation**:
-   - Different validation criteria for different contexts
-   - Validation during context transitions
-   - Consistency checks across contexts
+2. **Verification Process**:
+   - Clear verification criteria for different features
+   - Validation during development phases
+   - Consistency checks against requirements
 
-3. **Evolution Monitoring**:
-   - Tracking adaptation effectiveness
-   - Quality metrics that evolve with requirements
-   - Alerting for adaptation failures
+3. **Quality Monitoring**:
+   - Tracking implementation effectiveness
+   - Quality metrics that measure standards
+   - Alerting for quality issues
 
-## Learning & Improvement Mechanisms
+## Feedback Mechanisms
 
 ### Continuous Improvement
 
-1. **Implementation Learning**:
-   - How implementation process learns from experience
+1. **Implementation Feedback**:
+   - How implementation process incorporates feedback
    - Feedback loops between implementation and design
-   - Continuous improvement mechanisms
+   - Improvement mechanisms based on progress
 
-2. **Knowledge Accumulation**:
-   - How lessons learned are captured and reused
-   - Institutional knowledge about adaptation
-   - Best practices for adaptive implementation
+2. **Progress Tracking**:
+   - How progress is measured and reported
+   - Milestone tracking and reporting
+   - Progress reporting schedules
 
-3. **Adaptive Process Improvement**:
-   - How the planning process itself improves
-   - Evolution of planning methodologies
+3. **Plan Adjustment**:
+   - How the planning process adapts to new information
+   - Adjustment procedures for changing requirements
    - Learning from plan execution outcomes
 
 ## Key rules
 
-- Plan for adaptation throughout the implementation
-- Include context-aware execution strategies
-- Build in learning and feedback mechanisms
-- ERROR on plans that don't accommodate evolution
+- Plan for practical implementation throughout the project
+- Include clear quality and testing requirements
+- Build in progress tracking and feedback mechanisms
+- ERROR on plans that don't accommodate practical development
 
 ## Next Step Recommendation
 
-Now that your adaptive plan is complete, the most logical next step is:
+Now that your plan is complete, the most logical next step is:
 
-- **Primary**: Run `/arckit.chain` to generate adaptive task chains based on your implementation plan
-- **Alternative**: Run `/arckit.checklist` to create an adaptive quality checklist for your plan
+- **Primary**: Run `/arckit.chain` to generate task chains based on your implementation plan
+- **Alternative**: Run `/arckit.checklist` to create a quality checklist for your plan
 
-The `/arckit.chain` command will break down your plan into actionable, adaptive task chains that can evolve as implementation progresses.
+The `/arckit.chain` command will break down your plan into actionable task chains that can be executed with clear progress tracking.
 
-**Pro tip**: Use the evolution strategies and learning mechanisms you defined in your plan as guidance during task chain execution.
+**Pro tip**: Use the implementation strategy and feedback mechanisms you defined in your plan as guidance during task chain execution.

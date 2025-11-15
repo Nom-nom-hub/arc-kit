@@ -56,95 +56,193 @@ $analysisFile = "${featureDir}/analysis-report.md"
 $analysisContent = @'
 # Adaptive Specification Analysis Report
 
-## Feature
-[Feature name and brief description from spec]
-
-## Analysis Date
-[Current date]
+**Feature**: [Feature name and brief description from spec]
+**Analysis Date**: [Current date]
+**Spec File**: [Reference to the analyzed spec file]
+**Evolution Context**: [Reference to evolution pathways and adaptation strategies from analysis]
 
 ## Executive Summary
-[Brief overview of analysis findings and adaptive recommendations]
 
-## Cross-Artifact Consistency Analysis
+[Brief overview of analysis findings and comprehensive adaptive recommendations with evolution planning]
 
-### Consistency Issues Found
-[List specific inconsistencies found between different parts of the specification]
+## Adaptive Specification Quality Assessment
 
-### Impact Assessment
-[Severity rating for each issue (High/Medium/Low)]
+### Adaptive Requirements Analysis
+- **Adaptability Rating**: [Rating of how well requirements support adaptation]
+- **Evolution Readiness**: [Rating of how ready requirements are for evolution]
+- **Context Awareness**: [Assessment of how well requirements account for different contexts]
 
-### Adaptive Suggestions
-[Recommendations for making requirements more adaptable]
+### User Story Independence Verification
+- **P1 User Story**: [Verification that P1 story is independently implementable and testable]
+- **P2 User Story**: [Verification that P2 story is independently implementable and testable]
+- **P3 User Story**: [Verification that P3 story is independently implementable and testable]
 
-## Risk Assessment
+### Evolution Scenario Validation
+- **Scenario 1**: [Validation of evolution scenario 1 from spec]
+- **Scenario 2**: [Validation of evolution scenario 2 from spec]
+- **Scenario 3**: [Validation of evolution scenario 3 from spec]
 
-### Technical Risks
-[Identified technical risks with adaptive considerations]
+## Cross-Artifact Consistency Analysis with Evolution
 
-### Business Risks
-[Identified business risks with adaptive considerations]
+### Consistency Issues Found with Evolution Impact
+- **Issue 1**: [Specific inconsistency found between different parts of the specification] - Impact: [Low/Medium/High] on evolution path
+- **Issue 2**: [Specific inconsistency found between different parts of the specification] - Impact: [Low/Medium/High] on evolution path
+- **Issue 3**: [Specific inconsistency found between different parts of the specification] - Impact: [Low/Medium/High] on evolution path
 
-### Evolution Risks
-[Risks related to specification adaptability and evolution]
+### Impact Assessment by Evolution Stage
+- **Short-term Evolution (0-6 months)**: [Issues that impact near-term evolution]
+- **Medium-term Evolution (6-18 months)**: [Issues that impact medium-term evolution]
+- **Long-term Evolution (18+ months)**: [Issues that impact long-term evolution]
 
-## Adaptive Improvement Recommendations
+### Adaptive Suggestions with Implementation Strategy
+- **Suggestion 1**: [Recommendation for making requirements more adaptable] - Strategy: [How to implement this suggestion]
+- **Suggestion 2**: [Recommendation for making requirements more adaptable] - Strategy: [How to implement this suggestion]
+- **Suggestion 3**: [Recommendation for making requirements more adaptable] - Strategy: [How to implement this suggestion]
 
-### Immediate Improvements
-[Recommendations that should be implemented immediately]
+## Adaptive Risk Assessment with Context Awareness
 
-### Adaptive Enhancement Suggestions
-[Suggestions for making the specification more adaptable]
+### Technical Risks with Context Considerations
+- **Risk 1**: [Identified technical risk with adaptive considerations] - Context Impact: [How this affects different contexts]
+- **Risk 2**: [Identified technical risk with adaptive considerations] - Context Impact: [How this affects different contexts]
 
-### Specification Refinement
-[Specific recommendations to improve clarity and adaptability]
+### Business Risks with Evolution Planning
+- **Risk 1**: [Identified business risk with adaptive considerations] - Evolution Impact: [How this affects evolution planning]
+- **Risk 2**: [Identified business risk with adaptive considerations] - Evolution Impact: [How this affects evolution planning]
 
-## Continuous Improvement Pathways
+### Evolution Risks with Backward Compatibility
+- **Risk 1**: [Risk related to specification adaptability and evolution] - Backward Compatibility: [How this affects existing functionality]
+- **Risk 2**: [Risk related to specification adaptability and evolution] - Backward Compatibility: [How this affects existing functionality]
 
-### Feedback Mechanisms
-[Recommended approaches for collecting feedback about the specification]
+## Adaptive Improvement Recommendations with Reasoning Chains
 
-### Evolution Triggers
-[Conditions that would indicate when the specification needs updates]
+### Immediate Improvements for Evolution Readiness
+- **Improvement 1**: [Recommendation that should be implemented immediately] - Reasoning: [Why this is important for adaptation]
+- **Improvement 2**: [Recommendation that should be implemented immediately] - Reasoning: [Why this is important for adaptation]
 
-### Monitoring Approaches
-[How to track requirement effectiveness over time]
+### Adaptive Enhancement Suggestions with Context Validation
+- **Enhancement 1**: [Suggestions for making the specification more adaptable] - Context Validation: [How to validate this across contexts]
+- **Enhancement 2**: [Suggestions for making the specification more adaptable] - Context Validation: [How to validate this across contexts]
 
-## Action Items
+### Specification Refinement with Learning Integration
+- **Refinement 1**: [Specific recommendations to improve clarity and adaptability] - Learning Integration: [How to incorporate feedback]
+- **Refinement 2**: [Specific recommendations to improve clarity and adaptability] - Learning Integration: [How to incorporate feedback]
 
-### Critical Issues (High Priority)
-[Items that must be addressed immediately]
+## Adaptive Continuous Improvement Pathways
 
-### Important Improvements (Medium Priority)  
-[Items that should be addressed soon]
+### Feedback Integration Mechanisms
+- **User Feedback**: [Recommended approaches for collecting user feedback about the specification]
+- **System Feedback**: [Recommended approaches for collecting system feedback about implementation]
+- **Context Feedback**: [Recommended approaches for collecting context-specific feedback]
 
-### Enhancement Suggestions (Low Priority)
-[Items that could be addressed to improve adaptability]
+### Evolution Trigger Identification
+- **Performance Triggers**: [Conditions related to performance that would indicate when the specification needs updates]
+- **Usage Triggers**: [Conditions related to usage patterns that would indicate when the specification needs updates]
+- **Context Triggers**: [Conditions related to context changes that would indicate when the specification needs updates]
 
-## Adaptive Elements Validation
+### Adaptive Monitoring Approaches
+- **Adaptation Effectiveness**: [How to track adaptation effectiveness over time]
+- **Evolution Success**: [How to track evolution success metrics]
+- **Context Performance**: [How to track performance across different contexts]
 
-### Core Requirements
-[Verification that core requirements are stable and well-defined]
+## Adaptive Action Items with Evolution Planning
 
-### Flexible Areas
-[Verification that flexible areas are properly identified for adjustment]
+### Critical Issues (High Priority) - Blocking Evolution
+- **Issue 1**: [Items that must be addressed immediately] - Evolution Impact: [How this blocks evolution]
+- **Issue 2**: [Items that must be addressed immediately] - Evolution Impact: [How this blocks evolution]
 
-### Evolution Paths
-[Verification that evolution paths are clearly defined]
+### Important Improvements (Medium Priority) - Enhancement for Evolution
+- **Improvement 1**: [Items that should be addressed soon] - Evolution Enhancement: [How this helps evolution]
+- **Improvement 2**: [Items that should be addressed soon] - Evolution Enhancement: [How this helps evolution]
 
-## Recommendation Summary
+### Enhancement Suggestions (Low Priority) - Optional Evolution Improvements
+- **Suggestion 1**: [Items that could be addressed to improve adaptability] - Evolution Value: [Potential evolution value]
+- **Suggestion 2**: [Items that could be addressed to improve adaptability] - Evolution Value: [Potential evolution value]
 
-### Priority Actions
-[Top actions that should be taken based on analysis]
+## Adaptive Elements Validation with Schema Evolution
 
-### Adaptive Design Considerations
-[Key points to consider for adaptive design]
+### Core Requirements Stability
+- **Stable Requirement 1**: [Verification that core requirement is stable and well-defined] - Evolution Path: [How this might evolve safely]
+- **Stable Requirement 2**: [Verification that core requirement is stable and well-defined] - Evolution Path: [How this might evolve safely]
 
-### Future Planning
-[Recommendations for ongoing specification maintenance]
+### Flexible Areas Properly Identified
+- **Flexible Area 1**: [Verification that flexible area is properly identified for adjustment] - Adaptation Strategy: [How this area adapts]
+- **Flexible Area 2**: [Verification that flexible area is properly identified for adjustment] - Adaptation Strategy: [How this area adapts]
+
+### Schema Evolution Validation
+- **Entity 1**: [Verification that schema evolution paths are clearly defined] - Migration Path: [How to migrate this entity]
+- **Entity 2**: [Verification that schema evolution paths are clearly defined] - Migration Path: [How to migrate this entity]
+
+## Adaptive Recommendation Summary with Strategic Planning
+
+### Priority Actions for Immediate Evolution
+- **Action 1**: [Top actions that should be taken based on analysis] - Priority: [High/Medium/Low]
+- **Action 2**: [Top actions that should be taken based on analysis] - Priority: [High/Medium/Low]
+
+### Adaptive Design Considerations with Architecture Impact
+- **Consideration 1**: [Key points to consider for adaptive design] - Architecture Impact: [How this affects overall architecture]
+- **Consideration 2**: [Key points to consider for adaptive design] - Architecture Impact: [How this affects overall architecture]
+
+### Future Evolution Planning
+- **Short-term Plan**: [Recommendations for ongoing specification maintenance (0-6 months)]
+- **Medium-term Plan**: [Recommendations for ongoing specification maintenance (6-18 months)]
+- **Long-term Plan**: [Recommendations for ongoing specification maintenance (18+ months)]
+
+## Adaptive Context Validation
+
+### Context A Validation
+- **Requirements**: [How requirements work in Context A]
+- **Adaptation**: [How adaptation works in Context A]
+- **Validation**: [How to validate in Context A]
+
+### Context B Validation
+- **Requirements**: [How requirements work in Context B]
+- **Adaptation**: [How adaptation works in Context B]
+- **Validation**: [How to validate in Context B]
+
+### Context C Validation
+- **Requirements**: [How requirements work in Context C]
+- **Adaptation**: [How adaptation works in Context C]
+- **Validation**: [How to validate in Context C]
+
+## Adaptive Quality Gate Checklists
+
+### Specification Completeness
+- [ ] All user stories have clear acceptance scenarios
+- [ ] All requirements have measurable success criteria
+- [ ] All entities have complete definitions
+- [ ] All evolution scenarios are properly documented
+- [ ] Context switching requirements are specified
+- [ ] Backward compatibility requirements are defined
+
+### Adaptation Readiness
+- [ ] Requirements specify how to adapt to context changes
+- [ ] Success criteria include adaptation effectiveness
+- [ ] Risk mitigation strategies are defined for key areas
+- [ ] Feedback mechanisms are integrated into design
+- [ ] Learning mechanisms are planned
+- [ ] Schema evolution strategies are defined
+
+### Evolution Planning
+- [ ] Short-term evolution paths are defined
+- [ ] Medium-term evolution paths are defined
+- [ ] Long-term evolution paths are defined
+- [ ] Backward compatibility strategies are defined
+- [ ] Migration strategies are planned
+- [ ] Rollback strategies are available
+
+## Reasoning Chain Documentation
+
+### Decision Traceability
+- **Decision 1**: [Why this decision was made based on analysis] - Evidence: [What evidence supports this]
+- **Decision 2**: [Why this decision was made based on analysis] - Evidence: [What evidence supports this]
+
+### Learning Opportunities
+- **Opportunity 1**: [How to improve analysis process based on this experience]
+- **Opportunity 2**: [How to improve analysis process based on this experience]
 
 ## Notes
 
-[Additional notes about the analysis and recommendations]
+[Additional notes about the analysis and recommendations with evolution considerations and context-specific observations]
 
 '@
 

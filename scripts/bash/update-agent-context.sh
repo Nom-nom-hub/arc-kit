@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # /// script
+# requires-python = false
 # depends = ["jq"]
 # ///
 
@@ -94,158 +95,230 @@ mkdir -p "$(dirname "$agent_file")"
 
 # Create or update the agent-specific file with adaptive reasoning elements
 cat > "$agent_file" << 'EOF'
-# Arc Kit Adaptive Reasoning Chains - Agent Rules
+# Arc Kit: Advanced Adaptive Reasoning Chains - Agent Configuration
 
 ## Overview
-This document contains the rules and guidelines for using Arc Kit with adaptive reasoning chains. Follow these guidelines to ensure consistent and effective use of the methodology.
+This document contains comprehensive guidelines for using Arc Kit with sophisticated adaptive reasoning chains, evolution planning, context awareness, and learning mechanisms. Follow these advanced guidelines to implement highly adaptive systems with comprehensive evolution pathways and multi-context support.
 
-## Core Principles
+## Core Advanced Principles
 
-### Adaptive Reasoning Chains (ARC)
-- Think in chains of reasoning that can adapt based on new information
-- Consider how requirements might evolve and build in adaptability
-- Use feedback loops to continuously improve the solution
-- Maintain reasoning links between decisions and outcomes
+### Adaptive Reasoning Chain Architecture (ARCA)
+- Think in sophisticated reasoning chains that adapt based on multi-context information and evolution triggers
+- Consider how requirements might evolve across different contexts and build in comprehensive adaptability mechanisms
+- Use integrated feedback loops with learning algorithms to continuously improve adaptation strategies
+- Maintain traceable reasoning links between decisions, contexts, and outcomes with evolution impact analysis
+- Integrate decision trees that account for context switching and requirement changes
 
-### Adaptive Specification
-- Focus on what users need and why (not how to implement)
-- Identify which elements are core (stable) vs. flexible (evolvable)
-- Build in feedback mechanisms to detect when adaptation is needed
-- Document reasoning chains for all major decisions
+### Advanced Adaptive Specification
+- Focus on what users need and why across different contexts (not how to implement)
+- Identify which elements are core (stable) vs. flexible (evolvable) across different environments
+- Build in multi-context feedback mechanisms to detect when adaptation is needed
+- Document comprehensive reasoning chains linking decisions to context variations and evolution paths
+- Create context-specific success criteria with cross-context adaptability metrics
 
-### Adaptive Architecture
-- Design systems that can evolve with changing requirements
-- Create clear interfaces that isolate components from change
-- Plan for gradual, safe evolution rather than major rewrites
-- Include monitoring for when adaptations are needed
+### Advanced Adaptive Architecture
+- Design systems that can evolve independently across different contexts with coordinated evolution
+- Create adaptive interfaces that dynamically adjust to different contexts while maintaining compatibility
+- Plan for gradual, safe evolution with context-specific migration paths and backward compatibility
+- Include advanced monitoring for when adaptations are needed in different contexts
+- Implement context-aware component isolation with intelligent change propagation
 
-## Command Usage
+### Context Intelligence & Learning Systems
+- Implement systems that learn from context switching patterns and optimize adaptation
+- Build in intelligent context detection and prediction mechanisms
+- Design learning algorithms that improve adaptation effectiveness over time
+- Create feedback integration systems that adapt to changing context requirements
+- Plan for multi-dimensional evolution across contexts, requirements, and technology
+
+## Command Usage with Advanced Adaptation
 
 ### /arckit.constitution
-- Establish project governance principles for adaptive development
-- Define core adaptive principles and reasoning chain protocols
-- Create institutional learning and improvement systems
-- **Next**: `/arckit.define` for your first feature specification
+- Establish comprehensive project governance principles for multi-context adaptive development
+- Define core adaptive principles, reasoning chain protocols, and evolution governance
+- Create institutional learning and improvement systems with context awareness
+- Plan for constitutional evolution as requirements and contexts change
+- **Next**: `/arckit.define` for your first feature specification with context considerations
 
 ### /arckit.define
-- Create adaptive specifications that can evolve with changing requirements
-- Identify core vs. flexible requirements
-- Build in feedback loops for continuous improvement
+- Create sophisticated adaptive specifications that evolve with changing requirements across contexts
+- Identify core vs. flexible requirements for each target context
+- Build in multi-context feedback loops for continuous improvement and learning
+- Plan for context-specific evolution scenarios with coordinated adaptation
+- Document reasoning chains with evolution impact across contexts
 - **Next**: `/arckit.analyze` to evaluate specification readiness or `/arckit.plan` for direct planning
 
 ### /arckit.analyze
-- Analyze specifications for consistency and adaptation readiness
-- Identify risks and improvement opportunities
-- Evaluate adaptability of proposed solutions
-- **Next**: `/arckit.design` to create adaptive architecture or `/arckit.plan` for direct planning
-
-### /arckit.design
-- Design architectures that support requirement evolution
-- Create flexible components with clear interfaces
-- Plan for gradual, safe evolution
-- **Next**: `/arckit.plan` to create implementation plan or `/arckit.chain` for direct task generation
+- Analyze specifications for consistency and multi-context adaptation readiness
+- Identify context-specific risks and improvement opportunities
+- Evaluate adaptability of proposed solutions across different environments
+- Assess evolution readiness across contexts and cross-context dependencies
+- Validate reasoning chain completeness and context switching preparation
+- **Next**: `/arckit.plan` to create implementation plan with context considerations
 
 ### /arckit.plan
-- Create implementation plans with adaptation considerations
-- Include strategies for how the plan might need to evolve
-- Plan for feedback collection during implementation
-- **Next**: `/arckit.chain` to generate task chains or `/arckit.checklist` for quality assurance
+- Create comprehensive implementation plans with context-aware adaptation considerations
+- Include strategies for how the plan might need to evolve in different contexts
+- Plan for multi-context feedback collection during implementation
+- Design context-specific evolution pathways with migration strategies
+- Build in learning mechanisms that improve future planning based on context performance
+- **Next**: `/arckit.tasks` to generate context-aware implementation tasks or `/arckit.implement` for direct execution
 
-### /arckit.chain
-- Generate adaptive task chains with reasoning links
-- Include checkpoints for plan adjustments
-- Plan for parallel execution where possible
+### /arckit.tasks
+- Generate sophisticated implementation tasks from your plan with context and evolution awareness
+- Break down work into executable steps for different contexts with cross-context dependencies
+- Create task dependencies and execution order that accounts for context switching
+- Include checkpoints for plan adjustments across contexts and evolution scenarios
+- Plan for parallel execution where possible while maintaining context isolation
+- Generate tasks for adaptation mechanisms, evolution planning, and learning systems
 - **Next**: `/arckit.implement` for execution or `/arckit.checklist` for quality assurance
 
 ### /arckit.implement
-- Implement with adaptation in mind
-- Monitor for feedback that might require approach changes
-- Document lessons learned for future adaptations
+- Implement with sophisticated multi-context adaptation in mind
+- Monitor for feedback that might require approach changes across different contexts
+- Document lessons learned for future adaptations and context optimizations
+- Implement context switching mechanisms and adaptation algorithms
+- Build in reasoning chain logging and evolution tracking
 - **Next**: `/arckit.checklist` for quality verification or `/arckit.define` for next feature
 
 ### /arckit.checklist
-- Create adaptive quality checklists for all development phases
-- Verify implementation against adaptive requirements
-- Establish evolution-ready validation criteria
+- Create comprehensive adaptive quality checklists for multi-context development phases
+- Verify implementation against adaptive requirements across all contexts
+- Establish evolution-ready validation criteria with context-aware metrics
+- Validate context switching effectiveness and adaptation mechanisms
+- Check backward compatibility and migration readiness across contexts
 - **Next**: Return to `/arckit.define` for next feature or use as reference for current implementation
 
 ### /arckit.clarify
-- Resolve ambiguities in specifications with adaptive considerations
-- Ask targeted questions to improve specification clarity
-- Integrate answers directly into specifications
+- Resolve ambiguities in specifications with advanced adaptive considerations
+- Ask targeted questions about context requirements and evolution scenarios
+- Integrate answers directly into specifications with reasoning chain updates
+- Clarify context switching requirements and adaptation mechanisms
 - **Next**: `/arckit.plan` after clarifications or `/arckit.analyze` for re-analysis
 
-## Adaptive Reasoning Guidelines
+## Advanced Adaptive Reasoning Guidelines
 
-### Context Awareness
-- Consider the broader context when making decisions
-- Identify how external factors might affect the solution
-- Plan for context changes over time
+### Multi-Context Intelligence
+- Consider all relevant contexts when making architectural decisions
+- Identify how external context factors might affect the solution differently
+- Plan for dynamic context changes over time with intelligent switching
+- Build in context prediction and preparation mechanisms
 
-### Feedback Integration
-- Build in mechanisms to collect feedback about effectiveness
-- Design systems to monitor their own performance
-- Plan for how feedback will be used to improve the solution
+### Learning-Integrated Feedback Systems
+- Build in sophisticated mechanisms to collect feedback about effectiveness across contexts
+- Design systems with intelligent self-monitoring and performance prediction
+- Plan for how feedback will be used to improve adaptation using machine learning
+- Create feedback loops that adapt to changing user behavior across contexts
 
-### Evolution Planning
-- Plan for how components might need to evolve
-- Design migration paths for changing requirements
-- Consider backward compatibility when planning changes
+### Multi-Dimensional Evolution Planning
+- Plan for how components might need to evolve in different contexts independently
+- Design sophisticated migration paths for changing requirements and context needs
+- Consider multi-layer backward compatibility when planning changes across contexts
+- Plan for coordinated evolution across dependent contexts
 
-### Risk Assessment
-- Identify risks related to adaptability
-- Plan mitigation strategies for adaptation challenges
-- Consider failure modes of adaptive elements
+### Advanced Risk Management
+- Identify sophisticated risks related to multi-context adaptability
+- Plan comprehensive mitigation strategies for adaptation challenges across contexts
+- Consider failure modes of adaptive elements in different contexts
+- Design intelligent risk monitoring that adapts to changing conditions
 
-## Quality Standards
+## Advanced Quality Standards
 
 ### Adaptive Design Quality
-- [ ] Architecture supports requirement evolution
-- [ ] Components have clear interfaces that allow adjustment
-- [ ] Feedback mechanisms are built into the design
-- [ ] Adaptation paths are clearly defined
+- [ ] Architecture supports requirement evolution across all contexts
+- [ ] Components have intelligent interfaces that adapt to different contexts
+- [ ] Feedback mechanisms are built into the design with learning capabilities
+- [ ] Adaptation paths are clearly defined for each context and cross-context scenarios
+- [ ] Context switching is seamless with intelligent state management
+- [ ] Learning algorithms improve adaptation effectiveness over time
 
-### Implementation Quality
-- [ ] Implementation follows adaptive design principles
-- [ ] Code is maintainable and well-documented
-- [ ] Tests cover current functionality and potential evolutions
-- [ ] Error handling is comprehensive
+### Advanced Implementation Quality
+- [ ] Implementation follows sophisticated adaptive design principles across contexts
+- [ ] Code is maintainable, well-documented, and context-abstracted
+- [ ] Tests cover current functionality, context switching, and potential evolutions
+- [ ] Error handling is comprehensive across contexts with intelligent fallbacks
+- [ ] Performance is optimized for context switching with minimal overhead
+- [ ] Security considerations are maintained across all contexts
 
-### Adaptation Readiness
-- [ ] Implementation includes monitoring for adaptation triggers
-- [ ] Metrics are defined for measuring adaptation effectiveness
-- [ ] Checkpoints exist for evaluating when changes are needed
+### Evolution & Learning Readiness
+- [ ] Implementation includes intelligent monitoring for adaptation triggers across contexts
+- [ ] Sophisticated metrics are defined for measuring adaptation effectiveness by context
+- [ ] Checkpoints exist for evaluating when changes are needed in real-time
+- [ ] Learning mechanisms continuously improve adaptation strategies
+- [ ] Evolution pathways are tested and validated across contexts
 
-## Best Practices
+## Advanced Best Practices
 
-### Decision Documentation
-- Document the reasoning behind major decisions
-- Include alternatives that were considered
-- Note conditions that might cause decisions to change
+### Comprehensive Decision Documentation
+- Document the reasoning behind major decisions with context and evolution analysis
+- Include alternatives considered for each context and their trade-offs
+- Note conditions that might cause decisions to change across contexts
+- Link decisions to reasoning chains with measurable outcomes
 
-### Progressive Enhancement
-- Start with core functionality and add adaptability features
-- Plan for gradual improvements based on feedback
-- Implement feedback mechanisms early in the process
+### Intelligent Progressive Enhancement
+- Start with core cross-context functionality and add sophisticated adaptability features
+- Plan for intelligent improvements based on multi-context feedback and learning
+- Implement feedback mechanisms early with learning algorithm integration
+- Build in context prediction and preparation systems
 
-### Test-Driven Adaptation
-- Create tests for adaptive elements
-- Verify that feedback mechanisms work properly
-- Test evolution paths before they're needed
+### Advanced Test-Driven Adaptation
+- Create comprehensive tests for adaptive elements across all contexts
+- Verify that feedback mechanisms work properly in each context
+- Test evolution paths and migration scenarios before they're needed
+- Validate context switching and cross-context integration
+- Test learning algorithm effectiveness and improvement patterns
 
-## Common Pitfalls to Avoid
+## Advanced Pitfalls to Avoid
 
-- Building systems that assume requirements will never change
-- Creating rigid interfaces that prevent evolution
-- Failing to include feedback mechanisms
-- Not planning for how adaptation decisions will be made
-- Over-engineering adaptation mechanisms
+- Building systems that assume contexts or requirements will never change
+- Creating rigid interfaces that prevent evolution across contexts
+- Failing to include comprehensive feedback and learning mechanisms
+- Not planning for how sophisticated adaptation decisions will be made automatically
+- Over-engineering adaptation mechanisms without considering context switching costs
+- Ignoring cross-context dependencies and evolution coordination
+- Creating context-specific implementations that can't evolve together
+- Failing to build in learning and improvement mechanisms
 
-## Additional Resources
+## Advanced Implementation Strategies
 
-- Review the project constitution for architectural principles
-- Check the specification for adaptation requirements
-- Refer to implementation plans for evolution strategies
+### Context-Aware Architecture Patterns
+- Implement context adapters that abstract environment-specific behaviors
+- Use intelligent configuration management that adapts to context changes
+- Apply circuit breaker patterns for context-specific failure isolation
+- Build in context-specific caching and performance optimization
+
+### Evolution-Ready Design
+- Design for gradual migration with context-specific evolution paths
+- Implement version tolerance and backward compatibility by context
+- Plan for feature flagging and gradual rollout across contexts
+- Create context-specific monitoring and observability
+
+### Learning & Intelligence Integration
+- Implement A/B testing frameworks for adaptation improvement
+- Build in user behavior analysis for context optimization
+- Create predictive models for context switching and requirement changes
+- Design intelligent alerting and anomaly detection systems
+
+## Advanced Resources & References
+
+- Review the project constitution for architectural principles and evolution governance
+- Check the specification for context-specific adaptation requirements
+- Refer to implementation plans for evolution strategies and context coordination
+- Consult reasoning chain documentation for decision traceability
+- Access learning system logs for adaptation improvement insights
+
+## Continuous Improvement & Evolution
+
+### Learning System Integration
+- Regularly update adaptation strategies based on performance data
+- Continuously refine context detection and switching mechanisms
+- Improve reasoning chain effectiveness through analysis
+- Enhance evolution planning based on historical outcomes
+
+### Multi-Context Optimization
+- Optimize for context switching performance and efficiency
+- Improve cross-context communication and data consistency
+- Enhance learning algorithms based on context-specific patterns
+- Refine evolution strategies based on multi-context outcomes
 
 EOF
 

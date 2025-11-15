@@ -1,13 +1,13 @@
 ---
-description: Generate adaptive, actionable, dependency-ordered tasks.md for the feature based on available adaptive design artifacts using reasoning chains.
+description: Generate adaptive, actionable, dependency-ordered tasks.md for the feature based on available adaptive design artifacts using reasoning chains and evolution planning.
 handoffs:
   - label: Analyze For Adaptive Consistency
     agent: arckit.analyze
-    prompt: Run an adaptive project analysis for consistency across contexts
+    prompt: Run an adaptive project analysis for consistency across contexts and evolution scenarios
     send: true
   - label: Implement Adaptive Project
     agent: arckit.implement
-    prompt: Start the adaptive implementation in phases with context awareness
+    prompt: Start the adaptive implementation in phases with context awareness and evolution tracking
     send: true
 scripts:
   sh: scripts/bash/check-prerequisites.sh --json
@@ -32,22 +32,23 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Note: Not all projects have all documents. Generate adaptive tasks based on what's available.
 
 3. **Execute adaptive task generation workflow**:
-   - Load plan.md and extract adaptive tech stack, libraries, adaptive project structure
-   - Load spec.md and extract adaptive user stories with their priorities (P1, P2, P3, etc.) and context considerations
-   - If data-model.md exists: Extract adaptive entities and map to user stories with evolution considerations
-   - If contracts/ exists: Map adaptive endpoints to user stories with context awareness
-   - If research.md exists: Extract adaptive decisions for setup tasks
-   - Generate adaptive tasks organized by user story (see Adaptive Task Generation Rules below)
-   - Generate adaptive dependency graph showing user story completion order with context dependencies
-   - Create adaptive parallel execution examples per user story considering context isolation
-   - Validate adaptive task completeness (each user story has all needed tasks, independently testable across contexts)
+   - Load plan.md and extract adaptive tech stack, libraries, project structure with evolution considerations
+   - Load spec.md and extract adaptive user stories with their priorities (P1, P2, P3, etc.) and evolution scenarios
+   - If data-model.md exists: Extract adaptive entities and map to user stories with schema evolution planning
+   - If contracts/ exists: Map adaptive endpoints to user stories with API evolution planning
+   - If research.md exists: Extract adaptive decisions for setup tasks with technology evolution in mind
+   - Generate adaptive tasks organized by user story with evolution planning (see Adaptive Task Generation Rules below)
+   - Generate adaptive dependency graph showing user story completion order with context dependencies and evolution paths
+   - Create adaptive parallel execution examples per user story considering context isolation and evolution scenarios
+   - **CRITICAL**: Validate adaptive task completeness including evolution scenarios (each user story has all needed tasks, independently testable across contexts, and includes tasks for likely requirement changes)
+   - Plan for evolution testing: Include tasks for verifying how features behave when requirements change
 
 4. **Generate adaptive tasks.md**: Use `.arc/templates/adaptive-tasks-template.md` as structure, fill with:
    - Correct adaptive feature name from plan.md
-   - Phase 1: Adaptive Setup tasks (adaptive project initialization)
-   - Phase 2: Adaptive Foundational tasks (adaptive blocking prerequisites for all user stories)
+   - Phase 1: Adaptive Setup tasks (adaptive project initialization with evolution planning)
+   - Phase 2: Adaptive Foundational tasks (adaptive blocking prerequisites for all user stories with evolution considerations)
    - Phase 3+: One phase per adaptive user story (in priority order from spec.md)
-   - Each adaptive phase includes: story goal, independent test criteria across contexts, adaptive tests (if requested), adaptive implementation tasks
+   - Each adaptive phase includes: story goal, independent test criteria across contexts and evolution scenarios, adaptive tests (if requested), adaptive implementation tasks with evolution planning
    - Final Phase: Adaptive Polish & cross-cutting concerns
    - All adaptive tasks must follow the strict checklist format (see Adaptive Task Generation Rules below)
    - Clear adaptive file paths for each task

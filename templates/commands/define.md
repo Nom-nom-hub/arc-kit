@@ -1,12 +1,12 @@
 ---
-description: Create or update the adaptive feature specification using dynamic reasoning chains and context-aware analysis.
+description: Create or update the feature specification using iterative development principles with adaptive reasoning and evolution planning.
 handoffs:
-  - label: Build Adaptive Technical Plan
+  - label: Build Technical Plan
     agent: arckit.plan
-    prompt: Create an adaptive plan for the spec that can evolve with changing requirements...
-  - label: Clarify Adaptive Spec Requirements
+    prompt: Create an adaptive implementation plan that includes evolution strategies...
+  - label: Clarify Spec Requirements
     agent: arckit.analyze
-    prompt: Analyze specification requirements for adaptation readiness
+    prompt: Analyze specification requirements for clarity and adaptive feasibility
     send: true
 scripts:
   sh: scripts/bash/create-new-feature.sh --json "{ARGS}"
@@ -29,13 +29,13 @@ Given that feature description, do this:
 
 1. **Generate a concise short name** (2-4 words) for the branch:
    - Analyze the feature description and extract the most meaningful keywords
-   - Create a 2-4 word short name that captures the essence of the adaptive feature
-   - Use action-noun format when possible (e.g., "add-user-auth", "fix-payment-bug", "evolve-recommendations")
+   - Create a 2-4 word short name that captures the essence of the feature
+   - Use action-noun format when possible (e.g., "add-user-auth", "fix-payment-bug", "update-profile")
    - Preserve technical terms and acronyms (OAuth2, API, JWT, etc.)
    - Keep it concise but descriptive enough to understand the feature at a glance
    - Examples:
      - "I want to add user authentication" → "user-auth"
-     - "Implement adaptive recommendation system" → "adaptive-recommendations"
+     - "Implement user dashboard" → "user-dashboard"
      - "Create a dashboard for analytics" → "analytics-dashboard"
      - "Fix payment processing timeout bug" → "fix-payment-timeout"
 
@@ -71,48 +71,63 @@ Given that feature description, do this:
    - The JSON output will contain BRANCH_NAME and SPEC_FILE paths
    - For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot")
 
-3. Load `templates/adaptive-spec-template.md` to understand required sections for adaptive specifications.
+3. Load `templates/adaptive-spec-template.md` to understand required sections for specifications.
 
 4. Follow this execution flow for adaptive specification creation:
 
     1. Parse user description from Input
        If empty: ERROR "No feature description provided"
-    2. Extract key concepts from description with context awareness
-       Identify: actors, actions, data, constraints, contexts
-    3. For unclear aspects with adaptive reasoning:
-       - Make informed guesses based on context and industry standards
+    2. Extract key concepts from description
+       Identify: actors, actions, data, constraints, requirements
+    3. Apply adaptive reasoning principles:
+       - Consider how requirements might evolve over time
+       - Identify potential future use cases beyond current scope
+       - Plan for graceful degradation and feature scaling
+       - Think about how the feature might change based on user feedback or business needs
+    4. For unclear aspects:
+       - Make informed guesses based on context, industry standards, and adaptive patterns
        - Only mark with [NEEDS CLARIFICATION: specific question] if:
-         - The choice significantly impacts feature scope or user experience
-         - Multiple reasonable interpretations exist with different implications
-         - No reasonable default exists
+         - The choice significantly impacts feature scope, adaptability, or user experience
+         - Multiple reasonable interpretations exist with different implications for evolution
+         - No reasonable default exists that supports adaptability
        - **LIMIT: Maximum 3 [NEEDS CLARIFICATION] markers total**
-       - Prioritize clarifications by impact: scope > security/privacy > user experience > technical details
-    4. Fill User Scenarios & Testing section with adaptive considerations
+       - Prioritize clarifications by impact: adaptability > scope > security/privacy > user experience > technical details
+    5. Fill User Scenarios & Testing section
        If no clear user flow: ERROR "Cannot determine user scenarios"
-    5. Generate Adaptive Functional Requirements
-       Each requirement must be testable, verifiable, and capable of evolution
-       Use reasonable defaults for unspecified details (document assumptions in Assumptions section)
-    6. Define Adaptive Success Criteria
-       Create measurable, technology-agnostic outcomes that can evolve
-       Include both quantitative metrics (time, performance, volume) and qualitative measures (user satisfaction, task completion)
+    6. Generate Functional Requirements with adaptability in mind
+       Each requirement must be:
+       - Testable and verifiable
+       - Designed to support evolution and modification
+       - Clear about how it might need to adapt to changing requirements
+       - Include considerations for backward compatibility where relevant
+    7. Define Success Criteria with evolution metrics
+       Create measurable, technology-agnostic outcomes that include:
+       - Current requirements met
+       - Adaptability measures (how easily requirements could change)
+       - Future-proofing indicators (how well the feature handles new use cases)
+       - Include both quantitative metrics (time, performance, volume) and qualitative measures (user satisfaction, task completion)
        Each criterion must be verifiable without implementation details
-    7. **CRITICAL**: Define Verification Requirements for each feature (how to test/verify functionality)
+    8. **CRITICAL**: Define Verification Requirements for each feature (how to test/verify functionality)
        - Include specific test scenarios for each requirement
        - Define expected inputs, outputs, and behaviors
        - Specify edge cases and error conditions to validate
-    8. Identify Adaptive Key Entities (if data involved) that can evolve
-    9. Return: SUCCESS (adaptive spec ready for adaptive planning)
+       - Plan for testing evolution scenarios (how features behave when requirements change)
+    9. Identify Key Entities (if data involved)
+       - Define entities with evolution in mind
+       - Consider schema flexibility and migration strategies
+       - Plan for data compatibility across feature changes
+    10. Return: SUCCESS (adaptive spec ready for planning)
 
-5. Write the specification to SPEC_FILE using the adaptive template structure, replacing placeholders with concrete details derived from the feature description (arguments) while preserving section order and headings.
+5. Write the specification to SPEC_FILE using the template structure, replacing placeholders with concrete details derived from the feature description (arguments) while preserving section order and headings. Ensure the spec reflects adaptive principles throughout.
 
 6. **Adaptive Specification Quality Validation**: After writing the initial spec, validate it against adaptive quality criteria:
 
-   a. **Create Adaptive Spec Quality Checklist**: Generate a checklist file at `FEATURE_DIR/checklists/requirements.md` using the checklist template structure with these adaptive validation items:
+   a. **Create Adaptive Spec Quality Checklist**: Generate a checklist file at `FEATURE_DIR/checklists/adaptive-requirements.md` using the checklist template structure with these validation items:
 
       ```markdown
       # Adaptive Specification Quality Checklist: [FEATURE NAME]
 
-      **Purpose**: Validate adaptive specification completeness and quality before proceeding to adaptive planning
+      **Purpose**: Validate specification completeness, quality, and adaptability before proceeding to planning
       **Created**: [DATE]
       **Feature**: [Link to spec.md]
 
@@ -122,39 +137,46 @@ Given that feature description, do this:
       - [ ] Focused on user value and business needs
       - [ ] Written for non-technical stakeholders
       - [ ] All mandatory sections completed
-      - [ ] Adaptation mechanisms clearly defined
-      - [ ] Context awareness requirements specified
+      - [ ] Requirements clearly defined and testable
+      - [ ] Success criteria measurable and technology-agnostic
 
-      ## Requirement Adaptiveness
+      ## Adaptive Design Quality
+
+      - [ ] Requirements designed with evolution in mind
+      - [ ] Clear considerations for future use cases
+      - [ ] Graceful degradation strategies identified
+      - [ ] Schema/data flexibility considerations addressed
+      - [ ] Backward compatibility planned where relevant
+      - [ ] Migration paths identified for likely requirement changes
+
+      ## Requirement Quality
 
       - [ ] No [NEEDS CLARIFICATION] markers remain
-      - [ ] Requirements are testable and unambiguous
-      - [ ] Requirements can evolve with changing requirements
-      - [ ] Success criteria are measurable and adaptable
-      - [ ] Success criteria are technology-agnostic (no implementation details)
-      - [ ] All acceptance scenarios are defined
-      - [ ] Edge cases are identified
-      - [ ] Scope is clearly bounded but can adapt
-      - [ ] Dependencies and assumptions identified
+      - [ ] Requirements are testable, unambiguous, and adaptable
+      - [ ] Success criteria are measurable and technology-agnostic
+      - [ ] All acceptance scenarios are defined with evolution in mind
+      - [ ] Edge cases include adaptation scenarios
+      - [ ] Scope is clearly bounded but allows for evolution
+      - [ ] Dependencies and assumptions identified with adaptability considerations
 
-      ## Feature Adaptiveness
+      ## Feature Quality
 
       - [ ] All functional requirements have clear acceptance criteria
-      - [ ] User scenarios cover primary flows with adaptive considerations
+      - [ ] User scenarios cover primary flows and likely evolution paths
       - [ ] Feature meets measurable outcomes defined in Success Criteria
       - [ ] No implementation details leak into specification
-      - [ ] Adaptation triggers and pathways clearly defined
-      - [ ] Context switching capabilities specified
+      - [ ] Verification requirements include testing for adaptability
 
       ## Notes
 
-      - Items marked incomplete require spec updates before `/arckit.analyze` or `/arckit.plan`
+      - Items marked incomplete require spec updates before `/arckit.plan`
+      - Adaptability concerns should be noted and addressed before proceeding
       ```
 
-   b. **Run Adaptive Validation Check**: Review the spec against each checklist item:
+   b. **Run Validation Check**: Review the spec against each checklist item:
       - For each item, determine if it passes or fails
       - Document specific issues found (quote relevant spec sections)
-      - Assess adaptation readiness of each section
+      - Pay special attention to adaptive design quality items
 
    c. **Handle Validation Results**:
 
@@ -162,13 +184,13 @@ Given that feature description, do this:
 
       - **If items fail (excluding [NEEDS CLARIFICATION])**:
         1. List the failing items and specific issues
-        2. Update the spec to address each issue with adaptive considerations
+        2. Update the spec to address each issue, prioritizing adaptive quality issues
         3. Re-run validation until all items pass (max 3 iterations)
         4. If still failing after 3 iterations, document remaining issues in checklist notes and warn user
 
       - **If [NEEDS CLARIFICATION] markers remain**:
         1. Extract all [NEEDS CLARIFICATION: ...] markers from the spec
-        2. **LIMIT CHECK**: If more than 3 markers exist, keep only the 3 most critical (by scope/security/UX impact) and make informed guesses for the rest
+        2. **LIMIT CHECK**: If more than 3 markers exist, keep only the 3 most critical (by adaptability/scope/security/UX impact) and make informed guesses for the rest
         3. For each clarification needed (max 3), present options to user in this format:
 
            ```markdown
@@ -180,12 +202,12 @@ Given that feature description, do this:
 
            **Suggested Answers**:
 
-           | Option | Answer | Implications for Adaptation |
-           |--------|--------|-----------------------------|
-           | A      | [First suggested answer] | [How this affects adaptation] |
-           | B      | [Second suggested answer] | [How this affects adaptation] |
-           | C      | [Third suggested answer] | [How this affects adaptation] |
-           | Custom | Provide your own answer | [Explain how to provide custom input] |
+           | Option | Answer | Implications | Adaptability Impact |
+           |--------|--------|--------------|-------------------|
+           | A      | [First suggested answer] | [How this affects the feature] | [How this affects adaptability and evolution] |
+           | B      | [Second suggested answer] | [How this affects the feature] | [How this affects adaptability and evolution] |
+           | C      | [Third suggested answer] | [How this affects the feature] | [How this affects adaptability and evolution] |
+           | Custom | Provide your own answer | [Explain how to provide custom input] | [Considerations for adaptability] |
 
            **Your choice**: _[Wait for user response]_
            ```
@@ -198,23 +220,23 @@ Given that feature description, do this:
         5. Number questions sequentially (Q1, Q2, Q3 - max 3 total)
         6. Present all questions together before waiting for responses
         7. Wait for user to respond with their choices for all questions (e.g., "Q1: A, Q2: Custom - [details], Q3: B")
-        8. Update the spec by replacing each [NEEDS CLARIFICATION] marker with the user's selected or provided answer while considering adaptation implications
+        8. Update the spec by replacing each [NEEDS CLARIFICATION] marker with the user's selected or provided answer
         9. Re-run validation after all clarifications are resolved
 
-   d. **Update Adaptive Checklist**: After each validation iteration, update the checklist file with current pass/fail status and adaptation readiness assessment
+   d. **Update Checklist**: After each validation iteration, update the checklist file with current pass/fail status
 
-7. Report completion with branch name, spec file path, checklist results, and readiness for the next phase.
+7. Report completion with branch name, spec file path, checklist results, adaptive quality assessment, and readiness for the next phase.
 
 ## Next Step Recommendation
 
 Now that your adaptive specification is complete, the most logical next step is:
 
-- **Primary**: Run `/arckit.analyze` to analyze your specification for consistency and adaptation readiness
-- **Alternative**: Run `/arckit.plan` if you want to proceed directly to planning without analysis
+- **Primary**: Run `/arckit.analyze` to analyze your specification for consistency and adaptive feasibility
+- **Alternative**: Run `/arckit.plan` if you want to proceed directly to adaptive planning without analysis
 
-The `/arckit.analyze` command will evaluate your specification against adaptive quality criteria, identify potential risks, and ensure your requirements are ready for the design phase.
+The `/arckit.analyze` command will evaluate your specification against adaptive quality criteria, identify potential evolution risks, and ensure your requirements are ready for adaptive design phase.
 
-**Pro tip**: If your specification has [NEEDS CLARIFICATION] markers, consider addressing them before proceeding, or use `/arckit.clarify` to systematically resolve ambiguities.
+**Pro tip**: If your specification has [NEEDS CLARIFICATION] markers, consider addressing them before proceeding, or use `/arckit.clarify` to systematically resolve ambiguities. The adaptive nature of your specification will be a key factor in successful implementation.
 
 ## General Guidelines
 
@@ -223,53 +245,47 @@ The `/arckit.analyze` command will evaluate your specification against adaptive 
 - Focus on **WHAT** users need and **WHY**.
 - Avoid HOW to implement (no tech stack, APIs, code structure).
 - Written for business stakeholders, not developers.
-- Emphasize **adaptation capabilities** and **context awareness**.
-- DO NOT create any checklists that are embedded in the spec. That will be a separate command.
+- Focus on **clear requirements** and **measurable outcomes**.
+- **CRITICAL**: Always consider **how requirements might evolve** and **how the feature might change** over time.
 
 ### Section Requirements
 
 - **Mandatory sections**: Must be completed for every feature
-- **Adaptive sections**: Include only when relevant to adaptation
 - When a section doesn't apply, remove it entirely (don't leave as "N/A")
 
-### For Adaptive AI Generation
+### For AI Generation
 
 When creating this adaptive spec from a user prompt:
 
-1. **Make informed guesses**: Use context, industry standards, and common patterns to fill gaps
-2. **Document assumptions**: Record reasonable defaults in the Assumptions section
+1. **Make informed guesses**: Use context, industry standards, and adaptive patterns to fill gaps
+2. **Document assumptions**: Record reasonable defaults in the Assumptions section with adaptability considerations
 3. **Limit clarifications**: Maximum 3 [NEEDS CLARIFICATION] markers - use only for critical decisions that:
-   - Significantly impact feature scope or user experience
-   - Have multiple reasonable interpretations with different implications
-   - Lack any reasonable default
-4. **Prioritize clarifications**: scope > security/privacy > user experience > technical details
-5. **Think like a tester**: Every vague requirement should fail the "testable and unambiguous" checklist item
-6. **Think like an adapter**: Consider how requirements might evolve with context changes
+   - Significantly impact feature scope, adaptability, or user experience
+   - Have multiple reasonable interpretations with different implications for evolution
+   - Lack any reasonable default that supports adaptability
+4. **Prioritize clarifications**: adaptability > scope > security/privacy > user experience > technical details
+5. **Think like a tester AND an evolution strategist**: Every vague requirement should fail the "testable and unambiguous" checklist item, and every feature should be considered for how it might need to change
 
 ### Success Criteria Guidelines
 
-Adaptive success criteria must be:
+Success criteria must be:
 
 1. **Measurable**: Include specific metrics (time, percentage, count, rate)
 2. **Technology-agnostic**: No mention of frameworks, languages, databases, or tools
 3. **User-focused**: Describe outcomes from user/business perspective, not system internals
 4. **Verifiable**: Can be tested/validated without knowing implementation details
-5. **Adaptable**: Capable of evolving with changing requirements
-6. **Context-aware**: Sensitive to environmental changes
+5. **Adaptive**: Consider how success metrics might change as requirements evolve
 
 **Good examples**:
 
-- "Users can complete checkout in under 3 minutes (with adaptation for high-traffic periods)"
-- "System supports 10,000 concurrent users (adapting to 15,000 during peak)"
-- "Users see relevant results with 95% accuracy in normal conditions and 85% in unusual contexts"
-- "Task completion rate improves by 40% (with adaptation to user behavior changes)"
+- "Users can complete checkout in under 3 minutes (today), with system designed to maintain performance as transaction volume increases by 300%"
+- "System supports 10,000 concurrent users initially, with architecture designed to scale to 100,000 with minimal configuration changes"
+- "Users see relevant results with 95% accuracy (current), with system designed to adapt to new user preferences over time"
+- "Task completion rate is 85%, with system designed to improve through A/B testing and user feedback integration"
 
-### Adaptation Mechanisms
+**Adaptive considerations** (always include these thoughts):
 
-When creating adaptive specifications, consider:
-
-1. **Adaptation triggers**: What conditions cause the system to adapt?
-2. **Context detection**: How does the system recognize different contexts?
-3. **Evolution pathways**: How do requirements evolve over time?
-4. **Feedback loops**: How does the system learn from user interactions?
-5. **Fallback behaviors**: What happens when adaptation fails?
+- How might success measures change over time?
+- What constitutes success when the feature adapts to new requirements?
+- How will the feature perform when scaled or modified?
+- What are the long-term maintainability metrics?

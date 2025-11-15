@@ -39,24 +39,23 @@ def run_validation():
         'README.md',
         'templates/commands/define.md',
         'templates/commands/analyze.md',
-        'templates/commands/design.md',
         'templates/commands/plan.md',
-        'templates/commands/chain.md',
         'templates/commands/constitution.md',
         'templates/commands/implement.md',
         'templates/commands/checklist.md',
+        'templates/commands/clarify.md',
+        'templates/commands/tasks.md',
+        'templates/commands/taskstoissues.md',
         'scripts/bash/common.sh',
         'scripts/bash/create-new-feature.sh',
         'scripts/bash/setup-plan.sh',
         'scripts/bash/analyze-spec.sh',
-        'scripts/bash/setup-design.sh',
         'scripts/bash/generate-tasks.sh',
         'scripts/bash/update-agent-context.sh',
         'scripts/powershell/common.ps1',
         'scripts/powershell/create-new-feature.ps1',
         'scripts/powershell/setup-plan.ps1',
         'scripts/powershell/analyze-spec.ps1',
-        'scripts/powershell/setup-design.ps1',
         'scripts/powershell/generate-tasks.ps1',
         'scripts/powershell/update-agent-context.ps1'
     ]
@@ -83,12 +82,13 @@ def run_validation():
             print("OK Arc Kit CLI exists")
             print("OK arckit.define command implemented")
             print("OK arckit.analyze command implemented")
-            print("OK arckit.design command implemented")
             print("OK arckit.plan command implemented")
-            print("OK arckit.chain command implemented")
             print("OK arckit.implement command implemented")
             print("OK arckit.constitution command implemented")
             print("OK arckit.checklist command implemented")
+            print("OK arckit.clarify command implemented")
+            print("OK arckit.tasks command implemented")
+            print("OK arckit.taskstoissues command implemented")
         else:
             print(f"!! Arc Kit CLI error: {result.stderr}")
     except Exception as e:
@@ -101,7 +101,7 @@ def run_validation():
     
     doc_files = [
         'ARC-METHODOLOGY.md',
-        'spec-driven.md'
+        'adaptive-spec-driven.md'
     ]
     
     for doc_file in doc_files:

@@ -1,9 +1,13 @@
 ---
-description: Identify underspecified areas in the current adaptive feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec with adaptive considerations.
+description: Identify underspecified areas in the current adaptive feature spec by asking up to 5 highly targeted clarification questions with evolution planning considerations and encoding answers back into the spec with adaptive reasoning.
 handoffs:
   - label: Build Adaptive Technical Plan
     agent: arckit.plan
-    prompt: Create an adaptive plan for the spec. I am building with...
+    prompt: Create an adaptive plan for the spec with evolution strategies. I am building with...
+  - label: Analyze Clarifications
+    agent: arckit.analyze
+    prompt: Analyze the clarifications for consistency and adaptation readiness
+    send: true
 scripts:
    sh: scripts/bash/check-prerequisites.sh --json --paths-only
    ps: scripts/powershell/check-prerequisites.ps1 -Json -PathsOnly

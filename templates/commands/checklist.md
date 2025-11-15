@@ -1,16 +1,16 @@
 ---
-description: Generate adaptive checklists using dynamic reasoning chains and context-aware quality assurance.
+description: Generate adaptive checklists using dynamic reasoning chains, evolution planning, and context-aware quality assurance with adaptation tracking.
 handoffs:
   - label: Execute Quality Verification
     agent: arckit.implement
-    prompt: Verify implementation against adaptive checklist...
+    prompt: Verify implementation against adaptive checklist with evolution scenario validation...
   - label: Update Quality Framework
     agent: arckit.analyze
-    prompt: Analyze quality assurance effectiveness
+    prompt: Analyze quality assurance effectiveness with adaptation readiness assessment
     send: true
 scripts:
-  sh: scripts/bash/create-new-feature.sh --json "{ARGS}"
-  ps: scripts/powershell/create-new-feature.ps1 -Json "{ARGS}"
+  sh: scripts/bash/create-quality-checklist.sh --json "{ARGS}"
+  ps: scripts/powershell/create-quality-checklist.ps1 -Json "{ARGS}"
 ---
 # User Input
 

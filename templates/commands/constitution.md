@@ -1,16 +1,16 @@
 ---
-description: Establish adaptive governance principles using dynamic reasoning chains and context-aware institutional learning.
+description: Establish adaptive project principles and evolution-focused success metrics for iterative development with context-aware governance.
 handoffs:
-  - label: Apply Adaptive Principles
+  - label: Apply Adaptive Project Principles
     agent: arckit.define
-    prompt: Apply constitution principles to feature specification...
-  - label: Update Governance Framework
+    prompt: Apply adaptive project principles to feature specification with evolution considerations...
+  - label: Reference Adaptive Project Principles
     agent: arckit.plan
-    prompt: Plan for governance improvements based on constitution
+    prompt: Reference adaptive project principles when planning implementation with evolution strategies
     send: true
 scripts:
-  sh: scripts/bash/create-new-feature.sh --json "{ARGS}"
-  ps: scripts/powershell/create-new-feature.ps1 -Json "{ARGS}"
+  sh: scripts/bash/create-new-project.sh --json "{ARGS}"
+  ps: scripts/powershell/create-new-project.ps1 -Json "{ARGS}"
 ---
 
 # User Input
@@ -23,148 +23,127 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 ## Outline
 
-1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for CONSTITUTION_FILE, GOVERNANCE_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
+1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for CONSTITUTION_FILE, PROJECT_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read existing `.arc/memory/constitution.md` if available, otherwise start fresh. Load CONSTITUTION_FILE template.
+2. **Load adaptive context**: Read existing `.arc/memory/constitution.md` if available, otherwise start fresh. Load CONSTITUTION_FILE template. Consider:
+   - Existing project patterns and practices
+   - Context-specific requirements and constraints
+   - Evolution and adaptation patterns from similar projects
+   - Quality standards and governance requirements
 
 3. **Execute adaptive constitution workflow**:
-   - Define Core Adaptive Principles
-   - Establish Adaptive Governance Framework  
-   - Create Reasoning Chain Protocols
-   - Design Evolution Framework Implementation
-   - Implement Context Integration Standards
-   - Build Learning & Improvement Systems
+   - Define Core Project Principles
+   - Establish Success Metrics
+   - Create Decision-Making Guidelines
+   - Design Quality Standards
+   - Set Communication Protocols
 
-4. **Adaptive Governance Validation**: Validate constitution against:
-   - Organizational adaptability requirements
-   - Context sensitivity needs
-   - Multi-agent collaboration capabilities
+4. **Project Governance Validation**: Validate constitution against:
+   - Team collaboration requirements
+   - Quality standards
+   - Iteration planning capabilities
 
-5. **Generate Adaptive Governance Artifacts**: Create governance artifacts with:
-   - Adaptive decision-making frameworks
-   - Context-aware policy mechanisms
-   - Learning and evolution protocols
+5. **Generate Project Artifacts**: Create governance artifacts with:
+   - Clear decision-making frameworks
+   - Quality and testing standards
+   - Iteration and feedback protocols
 
-## Core Principles of Adaptive Reasoning Chains
+## Core Project Principles
 
-### Adaptive Behavioral Principles
+### Project Values
 
-1. **Principles Guiding Adaptive Behavior**:
-   - Core principles that govern adaptive behavior
-   - Values that remain consistent during evolution
-   - Ethical guidelines for adaptive systems
+1. **Practical Development**:
+   - Focus on working software over extensive documentation
+   - Emphasize iterative progress over perfection
+   - Prioritize clear communication and collaboration
 
-2. **Evolution Integrity Principles**:
-   - Principles that maintain system integrity during change
-   - Consistency requirements across evolution paths
-   - Stability requirements during adaptation
+2. **Quality Focus**:
+   - Maintain high standards for code quality and testing
+   - Ensure requirements are clear and testable
+   - Build in quality checks throughout development
 
-3. **Context Awareness Principles**:
-   - Principles for appropriate context-sensitive behavior
-   - Guidelines for context detection and response
-   - Ethical considerations for context usage
+3. **Adaptability**:
+   - Build systems that can evolve based on feedback
+   - Allow for requirement changes during development
+   - Maintain flexibility in implementation approaches
 
-## Adaptive Governance Framework
+## Success Metrics
 
-### Dynamic Decision-Making
+### Project Success Criteria
 
-1. **Adaptive Decision Authority**:
-   - How decisions are made in evolving systems
-   - Authority structures that adapt to context
-   - Conflict resolution in dynamic environments
+1. **Delivery Metrics**:
+   - Features delivered according to defined requirements
+   - Quality standards consistently met
+   - Stakeholder satisfaction with delivered functionality
 
-2. **Context-Sensitive Governance**:
-   - Governance mechanisms that adapt to different contexts
-   - Policy frameworks that adjust to environment
-   - Authority delegation based on context
+2. **Quality Metrics**:
+   - Code quality and maintainability standards
+   - Test coverage and reliability
+   - Performance and security requirements met
 
-3. **Multi-Agent Coordination**:
-   - How multiple agents collaborate in adaptive systems
-   - Shared knowledge protocols
-   - Coordination mechanisms across agents
+3. **Process Metrics**:
+   - Iteration completion rates
+   - Time from requirement to delivery
+   - Feedback incorporation effectiveness
 
-## Reasoning Chain Protocols
+## Decision-Making Guidelines
 
-### Chain Creation Standards
+### Technical Decisions
 
-1. **Adaptive Chain Creation**:
-   - Standards for creating reasoning chains
-   - Protocols for multi-agent collaboration
-   - Guidelines for traceability and accountability
+1. **Technology Selection**:
+   - Choose technologies based on project requirements
+   - Consider team expertise and long-term maintainability
+   - Balance innovation with stability
 
-2. **Chain Evolution Protocols**:
-   - How reasoning chains evolve over time
-   - Standards for chain modification
-   - Quality criteria for chain updates
+2. **Architecture Decisions**:
+   - Design for maintainability and testing
+   - Consider scalability and performance needs
+   - Plan for future evolution and extension
 
-3. **Cross-Chain Coordination**:
-   - How different reasoning chains interact
-   - Consistency mechanisms between chains
-   - Conflict resolution in chain interactions
+3. **Quality Standards**:
+   - Define clear testing requirements
+   - Establish code review processes
+   - Set performance and security standards
 
-## Evolution Framework Implementation
+## Quality Standards
 
-### System Evolution Governance
+### Code Quality
 
-1. **Evolution Management Framework**:
-   - Framework for managing system evolution
-   - Standards for adaptation triggers
-   - Quality criteria for evolutionary changes
+1. **Code Review Requirements**:
+   - All code changes require review
+   - Clear acceptance criteria for merge
+   - Focus on maintainability and correctness
 
-2. **Change Readiness Assessment**:
-   - How to assess if systems are ready for change
-   - Criteria for evolutionary path selection
-   - Risk assessment for evolution decisions
+2. **Testing Standards**:
+   - All features must have appropriate tests
+   - Performance testing where applicable
+   - Security considerations addressed
 
-3. **Evolution Quality Gates**:
-   - Quality checkpoints during evolution
-   - Validation criteria for evolutionary changes
-   - Rollback triggers for failed evolutions
+3. **Documentation Requirements**:
+   - Clear documentation for complex features
+   - API documentation for external interfaces
+   - Architectural decisions documented
 
-## Context Integration Standards
+## Communication Protocols
 
-### Environmental Adaptation
+### Team Communication
 
-1. **Context Detection Standards**:
-   - Principles for context awareness
-   - Guidelines for environmental adaptation
-   - Standards for context-sensitive behavior
+1. **Progress Updates**:
+   - Regular updates on feature progress
+   - Clear identification of blockers
+   - Transparent reporting of challenges
 
-2. **Context Transition Protocols**:
-   - How to handle context transitions safely
-   - Consistency requirements across contexts
-   - Validation during context switching
-
-3. **Context Boundary Management**:
-   - How to define and manage context boundaries
-   - Cross-context coordination requirements
-   - Context isolation when needed
-
-## Learning & Improvement Systems
-
-### Continuous Improvement Framework
-
-1. **Institutional Learning Principles**:
-   - Principles for continuous learning
-   - Mechanisms for institutional knowledge
-   - Standards for methodology improvement
-
-2. **Adaptive Knowledge Management**:
-   - How knowledge adapts to new information
-   - Learning from success and failure
-   - Knowledge sharing across contexts
-
-3. **Improvement Validation**:
-   - How to validate improvement effectiveness
-   - Standards for improvement assessment
-   - Feedback integration for continuous improvement
+2. **Feedback Integration**:
+   - Structured approach to feedback collection
+   - Clear process for feedback prioritization
+   - Regular review meetings
 
 ## Key rules
 
-- Constitution must support adaptation at all levels
-- Include context-aware governance mechanisms
-- Build in learning and institutional memory systems
-- ERROR on principles that impede adaptation or learning
+- Constitution must support practical development workflows
+- Include clear quality and testing standards
+- Build in feedback and iteration mechanisms
+- ERROR on principles that impede practical development
 - **CRITICAL**: All implementations must meet quality and verification standards
 - **CRITICAL**: Testing and validation are required for all deliverables
 - **CRITICAL**: Code correctness and functionality verification are mandatory
@@ -174,9 +153,9 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 Now that your project constitution is established, the most logical next step is:
 
-- **Primary**: Run `/arckit.define` to create your first feature specification guided by the governance principles you've established
+- **Primary**: Run `/arckit.define` to create your first feature specification guided by the principles you've established
 - **Alternative**: Use the constitution as reference in future commands to maintain consistency
 
-The `/arckit.define` command will create feature specifications that align with the adaptive principles and governance framework you've defined.
+The `/arckit.define` command will create feature specifications that align with the project principles and quality standards you've defined.
 
-**Pro tip**: All future development should refer back to these constitution principles to ensure consistency and alignment with your governance standards.
+**Pro tip**: All future development should refer back to these constitution principles to ensure consistency and alignment with project standards.
