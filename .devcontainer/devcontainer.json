@@ -73,8 +73,8 @@
 			"arckit.checklist": true
 		},
 		"chat.tools.terminal.autoApprove": {
-			".arckit/scripts/bash/": true,
-			".arckit/scripts/powershell/": true
+			".arc/scripts/bash/": true,
+			".arc/scripts/powershell/": true
 		},
 		"adaptive.reasoning.enable": true,
 		"adaptive.contextAware": true,
