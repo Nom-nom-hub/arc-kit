@@ -4,14 +4,10 @@ Arc Kit revolutionizes software development with **Adaptive Reasoning Chains (AR
 
 ## 🚀 Installation
 
-Install Arc Kit using uv tool:
+Install Arc Kit directly from the GitHub repository using uv:
 
 ```bash
-# Install using uv (recommended)
-uv tool install arc_cli
-
-# Or install with specific version
-uv tool install arc_cli==1.0.0
+uv tool install git+https://github.com/Nom-nom-hub/arc-kit.git
 ```
 
 ## 🚀 The Breakthrough: Adaptive Reasoning Chains

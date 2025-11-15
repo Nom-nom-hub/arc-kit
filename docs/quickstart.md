@@ -11,14 +11,14 @@ This guide will help you get started with Adaptive Reasoning Chain (ARC) Develop
 Initialize your project depending on the coding agent you're using:
 
 ```bash
-uvx --from git+https://https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME>
+uvx --from git+https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME>
 ```
 
 Pick script type explicitly (optional):
 
 ```bash
-uvx --from git+https://https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME> --script ps  # Force PowerShell
-uvx --from git+https://https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME> --script sh  # Force POSIX shell
+uvx --from git+https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME> --script ps  # Force PowerShell
+uvx --from git+https://github.com/Nom-nom-hub/arc-kit.git arc init <PROJECT_NAME> --script sh  # Force POSIX shell
 ```
 
 ### 2. Define with Adaptive Reasoning
