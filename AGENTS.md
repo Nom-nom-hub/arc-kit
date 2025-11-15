@@ -47,7 +47,7 @@ Arc Kit automatically integrates with your AI agent to provide:
 
 You can customize the agent integration by placing configuration files in:
 
-- `.arckit/` - Arc Kit specific configurations
+- `.arc/` - Arc Kit specific configurations
 - Agent-specific directories (e.g., `.claude/`, `.cursor/`, etc.)
 
 ### Recommended Settings

@@ -28,7 +28,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 1. **Setup**: Run `{SCRIPT}` from repo root and parse JSON for DESIGN_FILE, PLAN_FILE, SPECS_DIR, BRANCH. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
-2. **Load context**: Read DESIGN_FILE, SPEC_FILE, and `.arckit/memory/constitution.md`. Load PLAN_FILE template (already copied).
+2. **Load context**: Read DESIGN_FILE, SPEC_FILE, and `.arc/memory/constitution.md`. Load PLAN_FILE template (already copied).
 
 3. **Execute adaptive planning workflow**: Follow the structure in PLAN_FILE template to:
    - Define Evolution Strategy (how implementation adapts to change)

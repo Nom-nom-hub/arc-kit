@@ -3,7 +3,7 @@
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Adaptive feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/arckit.plan` command. See `.arckit/templates/commands/plan.md` for the execution workflow.
+**Note**: This template is filled in by the `/arckit.plan` command. See `.arc/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 

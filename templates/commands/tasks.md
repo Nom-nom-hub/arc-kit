@@ -42,7 +42,7 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Create adaptive parallel execution examples per user story considering context isolation
    - Validate adaptive task completeness (each user story has all needed tasks, independently testable across contexts)
 
-4. **Generate adaptive tasks.md**: Use `.arckit/templates/adaptive-tasks-template.md` as structure, fill with:
+4. **Generate adaptive tasks.md**: Use `.arc/templates/adaptive-tasks-template.md` as structure, fill with:
    - Correct adaptive feature name from plan.md
    - Phase 1: Adaptive Setup tasks (adaptive project initialization)
    - Phase 2: Adaptive Foundational tasks (adaptive blocking prerequisites for all user stories)

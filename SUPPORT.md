@@ -53,7 +53,7 @@ arckit check
 arckit version
 
 # Validate project structure (run from project directory)
-ls -la .arckit/  # Check if initialization created necessary files
+ls -la .arc/  # Check if initialization created necessary files
 ```
 
 ## Reporting Issues

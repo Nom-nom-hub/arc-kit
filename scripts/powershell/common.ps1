@@ -2,9 +2,9 @@
 # This file is dot-sourced by other scripts to provide shared functionality
 
 # Default values
-$DEFAULT_SPECS_DIR = ".arckit/specs"
-$DEFAULT_MEMORY_DIR = ".arckit/memory"
-$DEFAULT_SPECIFY_DIR = ".arckit"
+$DEFAULT_SPECS_DIR = ".arc/specs"
+$DEFAULT_MEMORY_DIR = ".arc/memory"
+$DEFAULT_SPECIFY_DIR = ".arc"
 
 # Function to get the next feature number based on existing branches and spec directories
 function Get-NextFeatureNumber {
@@ -173,8 +173,8 @@ function Set-GitBranch {
 
 # Function to create or update the constitution file
 function Confirm-ConstitutionExists {
-    # Ensure the arckit structure exists first
-    Confirm-ArcKitStructure
+    # Ensure the arc structure exists first
+    Confirm-ArcStructure
 
     $constitutionPath = "${DEFAULT_MEMORY_DIR}/constitution.md"
 
@@ -236,8 +236,8 @@ This constitution may be updated as the team learns and evolves. Changes should 
     }
 }
 
-# Function to create or update the .arckit directory structure
-function Confirm-ArcKitStructure {
+# Function to create or update the .arc directory structure
+function Confirm-ArcStructure {
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/scripts" -Force | Out-Null
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/templates" -Force | Out-Null
     New-Item -ItemType Directory -Path "${DEFAULT_SPECIFY_DIR}/memory" -Force | Out-Null
